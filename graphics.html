@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Record — What Is the Government Doing</title>
+<meta name="description" content="Every bill graphic in one place: plain-language, cited breakdowns of the federal bills that touch your rights.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#f9f6ee">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <header class="masthead">
+    <h1 class="mast-title">The record<span class="q">.</span></h1>
+    <p class="mast-sub">Every graphic we've published — bill by bill, cited to the section, in one place. Swipe a strip, tap a slide to read it full-size.</p>
+    <img class="mast-stamp" src="assets/maple-stamp.png" alt="" aria-hidden="true">
+    <nav class="tabs">
+      <a href="index.html">Take Action</a>
+      <a href="graphics.html" class="active">The Record</a>
+    </nav>
+  </header>
+
+  <div id="gallery-root"></div>
+
+  <div class="privacy">
+    <h3><span class="stamp-word">Recorded:</span> nothing</h3>
+    <p>No accounts, no analytics, no cookies, no database. This page is paper: you read it, it learns nothing about you.</p>
+  </div>
+
+  <footer>
+    <span>What is the government doing? · Source: LEGISinfo (parl.ca)</span>
+    <span>Non-partisan · We flag mechanisms, not politics</span>
+    <a href="index.html?file=enacted">The enacted file — bills now law →</a>
+  </footer>
+
+</div>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Slide viewer">
+  <button class="lb-btn lb-close" id="lb-close" aria-label="Close">×</button>
+  <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous slide">‹</button>
+  <img id="lb-img" alt="Bill graphic slide">
+  <button class="lb-btn lb-next" id="lb-next" aria-label="Next slide">›</button>
+  <div class="lb-count" id="lb-count"></div>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/gallery.js"></script>
+<script>
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");
+</script>
+</body>
+</html>

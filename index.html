@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Take Action — What Is the Government Doing</title>
+<meta name="description" content="Pick a bill, see what it actually does, and send a cited letter to Parliament from your own email. Nothing about you is recorded.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#f9f6ee">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="simple">
+<div class="shell">
+
+  <header class="masthead">
+    <h1 class="mast-title">What is the government doing<span class="q">?</span></h1>
+    <p class="mast-sub">Pick a bill. See what it actually does. Send a cited letter to Parliament — from your own email, with nothing about you recorded.</p>
+    <img class="mast-stamp" src="assets/maple-stamp.png" alt="" aria-hidden="true">
+    <nav class="tabs">
+      <a href="index.html" id="tab-action" class="active">Take Action</a>
+      <a href="graphics.html">The Record</a>
+      <a href="index.html?file=enacted" id="tab-enacted" class="hidden">The Enacted File</a>
+    </nav>
+  </header>
+
+  <!-- ======================= choose a bill ======================= -->
+  <section class="block" id="choose">
+    <div class="eyebrow">Step 01 · The Bill</div>
+    <h2 class="section-title">Choose a bill</h2>
+    <div class="panel"><span class="tick-b"></span>
+      <div class="selector-row">
+        <div class="field">
+          <label for="bill-select" id="bill-select-label">Active file — before Parliament now</label>
+          <select id="bill-select" aria-label="Choose a bill"></select>
+        </div>
+      </div>
+      <p class="legend"><b>Alarm</b> — reform demanded &nbsp;·&nbsp; <b>Concern</b> — answers required &nbsp;·&nbsp; <b>Explain</b> — explanation required</p>
+      <p class="side-box fine hidden" id="enacted-note" style="border:none; background:none; padding:8px 2px 0;">
+        These bills have received royal assent — they can no longer be voted down, but they are
+        still answerable. The letter shifts to accountability: the regulations, an amending bill,
+        and how the new powers get used.
+      </p>
+
+      <div id="bill-detail" class="hidden">
+        <div id="bill-head" class="bill-head">
+          <div class="bill-code" id="bh-code"></div>
+          <span class="chip" id="bh-chip"></span>
+          <span class="chip law hidden" id="bh-law">Now law</span>
+        </div>
+        <div class="bill-desc" id="bh-desc"></div>
+        <div class="bill-status" id="bh-status"></div>
+        <div class="bill-links">
+          <a id="bh-legis" href="#" target="_blank" rel="noopener">Official record — LEGISinfo ↗</a>
+          <span id="bh-record-wrap"> · <a id="bh-record" href="#">See the graphics for this bill →</a></span>
+        </div>
+        <blockquote class="lead-quote" id="bh-lead"></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= recipient (revealed after a bill is chosen) ======================= -->
+  <section class="block hidden" id="recipient">
+    <div class="eyebrow">Step 02 · The Recipient</div>
+    <h2 class="section-title" id="rcpt-title">Find your MP</h2>
+
+    <div class="panel" id="mp-module"><span class="tick-b"></span>
+      <div class="selector-row">
+        <div class="field" style="max-width:260px">
+          <label for="postal">Your postal code</label>
+          <input type="text" id="postal" placeholder="K1A 0A6" maxlength="7" autocomplete="postal-code">
+        </div>
+        <div><button id="find-mp">Find my MP</button></div>
+      </div>
+      <p class="error-text hidden" id="mp-error"></p>
+      <div class="mp-card hidden" id="mp-card">
+        <div class="who" id="mp-name"></div>
+        <div class="meta" id="mp-meta"></div>
+        <div class="meta" id="mp-email"></div>
+      </div>
+      <p class="side-box fine" style="border:none; background:none; padding:10px 2px 0;">
+        Your postal code goes directly from your browser to
+        <a href="https://represent.opennorth.ca" target="_blank" rel="noopener">Represent</a>, a Canadian
+        open-data service — never to this site, and nothing is stored. Prefer not to?
+        <a href="https://www.ourcommons.ca/members/en" target="_blank" rel="noopener">Look your MP up on ourcommons.ca ↗</a>
+      </p>
+    </div>
+
+    <div class="panel hidden" id="senate-module"><span class="tick-b"></span>
+      <p style="max-width:74ch; margin-bottom:12px;">This bill is before the <strong>Senate</strong>. Senators are appointed to
+      represent provinces and regions — so the letter goes to <strong>a senator from your province</strong>, not an MP.</p>
+      <div class="selector-row">
+        <div class="field" style="max-width:260px">
+          <label for="postal-sen">Your postal code</label>
+          <input type="text" id="postal-sen" placeholder="K1A 0A6" maxlength="7" autocomplete="postal-code">
+        </div>
+        <div class="field">
+          <label for="senator-select">Senator</label>
+          <select id="senator-select" aria-label="Choose a senator from your province" disabled>
+            <option value="">— Enter a postal code first —</option>
+          </select>
+        </div>
+      </div>
+      <p class="error-text hidden" id="senator-error"></p>
+      <div class="mp-card hidden" id="senator-card">
+        <div class="who" id="sen-name"></div>
+        <div class="meta" id="sen-meta"></div>
+        <div class="meta" id="sen-email"></div>
+      </div>
+      <p class="side-box fine" style="border:none; background:none; padding:10px 2px 0;">
+        Your province is worked out from the first letter of your postal code, right here in your browser —
+        <strong>nothing is sent anywhere</strong>. A senator is picked at random to spread letters fairly;
+        switch to any other in the list.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================= the letter (revealed after a bill is chosen) ======================= -->
+  <section class="block hidden" id="letter-section">
+    <div class="eyebrow">Step 03 · The Letter</div>
+    <h2 class="section-title">Send it in your own words</h2>
+
+    <div class="letter-grid">
+      <div>
+        <textarea class="letter" id="letter" spellcheck="false" aria-label="Your letter"></textarea>
+        <p class="letter-note">Edit freely — a letter in your own words carries more weight than a form letter.
+        Personal stakes ("as a parent…", "as someone who works in…") matter most.</p>
+        <div class="btn-row">
+          <button class="primary" id="send-btn">Open in your email app</button>
+          <button id="copy-letter">Copy letter</button>
+          <button id="copy-email" disabled>Copy recipient address</button>
+        </div>
+        <p class="error-text hidden" id="send-hint"></p>
+      </div>
+
+      <aside class="side-box">
+        <h3>Why this works</h3>
+        <p>MPs and senators weigh correspondence from the people they represent — it is tracked, tallied,
+        and answered. A cited, specific letter cannot be dismissed as noise.</p>
+        <p>Every claim in this letter carries the section number of the bill it comes from, so the office can verify
+        it in minutes.</p>
+        <p class="fine">The letter opens in <em>your</em> mail app and is sent from <em>your</em> address.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ======================= privacy ======================= -->
+  <div class="privacy">
+    <h3><span class="stamp-word">Recorded:</span> nothing</h3>
+    <p>No accounts, no analytics, no cookies, no database. The letter is sent by you, from your own
+    email — this page never sees it, or you.</p>
+  </div>
+
+  <footer>
+    <span>What is the government doing? · Source: LEGISinfo (parl.ca)</span>
+    <span>Non-partisan · We flag mechanisms, not politics</span>
+    <a href="index.html?file=enacted">The enacted file — bills now law →</a>
+  </footer>
+
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script>
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");
+</script>
+</body>
+</html>

@@ -1,0 +1,762 @@
+[
+ {
+  "name": "Fridhandler, Daryl S.",
+  "prov": "AB",
+  "province": "Alberta",
+  "affiliation": "PSG",
+  "email": "daryl.fridhandler@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/fridhandler-daryl/"
+ },
+ {
+  "name": "LaBoucane-Benson, Patti",
+  "prov": "AB",
+  "province": "Alberta",
+  "affiliation": "GRO",
+  "email": "patti.laboucane-benson@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/laboucane-benson-patti/"
+ },
+ {
+  "name": "Simons, Paula",
+  "prov": "AB",
+  "province": "Alberta",
+  "affiliation": "ISG",
+  "email": "paula.simons@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/simons-paula/"
+ },
+ {
+  "name": "Sorensen, Karen",
+  "prov": "AB",
+  "province": "Alberta",
+  "affiliation": "PSG",
+  "email": "karen.sorensen@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/sorensen-karen/"
+ },
+ {
+  "name": "Tannas, Scott",
+  "prov": "AB",
+  "province": "Alberta",
+  "affiliation": "CSG",
+  "email": "scott.tannas@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/tannas-scott/"
+ },
+ {
+  "name": "Wells, Kristopher",
+  "prov": "AB",
+  "province": "Alberta",
+  "affiliation": "PSG",
+  "email": "kristopher.wells@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/wells-kristopher/"
+ },
+ {
+  "name": "Busson, Bev",
+  "prov": "BC",
+  "province": "British Columbia",
+  "affiliation": "ISG",
+  "email": "bev.busson@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/busson-bev/"
+ },
+ {
+  "name": "Dhillon, Baltej S.",
+  "prov": "BC",
+  "province": "British Columbia",
+  "affiliation": "ISG",
+  "email": "baltej.dhillon@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/dhillon-baltej-s/"
+ },
+ {
+  "name": "Greenwood, Margo",
+  "prov": "BC",
+  "province": "British Columbia",
+  "affiliation": "ISG",
+  "email": "margo.greenwood@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/greenwood-margo/"
+ },
+ {
+  "name": "Martin, Yonah",
+  "prov": "BC",
+  "province": "British Columbia",
+  "affiliation": "C",
+  "email": "martin@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/martin-yonah/"
+ },
+ {
+  "name": "Wilson, Duncan",
+  "prov": "BC",
+  "province": "British Columbia",
+  "affiliation": "PSG",
+  "email": "duncan.wilson@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/wilson-duncan/"
+ },
+ {
+  "name": "Woo, Yuen Pau",
+  "prov": "BC",
+  "province": "British Columbia",
+  "affiliation": "ISG",
+  "email": "yuenpau.woo@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/woo-yuen-pau/"
+ },
+ {
+  "name": "Adler, Charles S.",
+  "prov": "MB",
+  "province": "Manitoba",
+  "affiliation": "CSG",
+  "email": "charles.adler@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/adler-charles/"
+ },
+ {
+  "name": "Gagné, Raymonde",
+  "prov": "MB",
+  "province": "Manitoba",
+  "affiliation": "",
+  "email": "raymonde.gagne@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/gagne-raymonde/"
+ },
+ {
+  "name": "McCallum, Mary Jane",
+  "prov": "MB",
+  "province": "Manitoba",
+  "affiliation": "C",
+  "email": "maryjane.mccallum@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/mccallum-mary-jane/"
+ },
+ {
+  "name": "McPhedran, Marilou",
+  "prov": "MB",
+  "province": "Manitoba",
+  "affiliation": "",
+  "email": "marilou.mcphedran@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/mcphedran-marilou/"
+ },
+ {
+  "name": "Osler, Flordeliz (Gigi)",
+  "prov": "MB",
+  "province": "Manitoba",
+  "affiliation": "CSG",
+  "email": "flordeliz.osler@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/osler-flordeliz/"
+ },
+ {
+  "name": "Arnold, Dawn",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "ISG",
+  "email": "dawn.arnold@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/arnold-dawn/"
+ },
+ {
+  "name": "Boudreau, Victor",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "ISG",
+  "email": "victor.boudreau@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/boudreau-victor/"
+ },
+ {
+  "name": "Cormier, René",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "ISG",
+  "email": "rene.cormier@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/cormier-rene/"
+ },
+ {
+  "name": "Kingston, Joan",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "ISG",
+  "email": "joan.kingston@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/kingston-joan/"
+ },
+ {
+  "name": "McNair, John M.",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "ISG",
+  "email": "john.mcnair@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/mcnair-john-m/"
+ },
+ {
+  "name": "Poirier, Rose-May",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "C",
+  "email": "rosemay.poirier@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/poirier-rose-may/"
+ },
+ {
+  "name": "Quinn, Jim",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "CSG",
+  "email": "jim.quinn@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/quinn-jim/"
+ },
+ {
+  "name": "Ringuette, Pierrette",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "ISG",
+  "email": "pierrette.ringuette@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/ringuette-pierrette/"
+ },
+ {
+  "name": "Ross, Krista",
+  "prov": "NB",
+  "province": "New Brunswick",
+  "affiliation": "CSG",
+  "email": "krista.ross@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/ross-krista-ann/"
+ },
+ {
+  "name": "Manning, Fabian",
+  "prov": "NL",
+  "province": "Newfoundland and Labrador",
+  "affiliation": "C",
+  "email": "fabian.manning@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/manning-fabian/"
+ },
+ {
+  "name": "Petten, Iris G.",
+  "prov": "NL",
+  "province": "Newfoundland and Labrador",
+  "affiliation": "GRO",
+  "email": "iris.petten@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/petten-iris/"
+ },
+ {
+  "name": "Ravalia, Mohamed-Iqbal",
+  "prov": "NL",
+  "province": "Newfoundland and Labrador",
+  "affiliation": "ISG",
+  "email": "mohamed-iqbal.ravalia@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/ravalia-mohamed-iqbal/"
+ },
+ {
+  "name": "Wells, David M.",
+  "prov": "NL",
+  "province": "Newfoundland and Labrador",
+  "affiliation": "C",
+  "email": "davidwells@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/wells-david-m/"
+ },
+ {
+  "name": "White, Judy A.",
+  "prov": "NL",
+  "province": "Newfoundland and Labrador",
+  "affiliation": "PSG",
+  "email": "judy.white@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/white-judy/"
+ },
+ {
+  "name": "Aucoin, Réjean",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "CSG",
+  "email": "rejean.aucoin@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/aucoin-rejean/"
+ },
+ {
+  "name": "Bernard, Wanda Thomas",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "PSG",
+  "email": "wandathomas.bernard@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/bernard-wanda-thomas/"
+ },
+ {
+  "name": "Coyle, Mary",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "ISG",
+  "email": "mary.coyle@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/coyle-mary/"
+ },
+ {
+  "name": "Cuzner, Rodger",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "PSG",
+  "email": "rodger.cuzner@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/cuzner-rodger/"
+ },
+ {
+  "name": "Deacon, Colin",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "CSG",
+  "email": "colin.deacon@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/deacon-colin/"
+ },
+ {
+  "name": "Ince, Tony",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "CSG",
+  "email": "tony.ince@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/ince-tony/"
+ },
+ {
+  "name": "MacDonald, Michael L.",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "C",
+  "email": "michael.macdonald@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/macdonald-michael-l/"
+ },
+ {
+  "name": "Prosper, Paul (PJ)",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "CSG",
+  "email": "paul.prosper@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/prosper-paul/"
+ },
+ {
+  "name": "Surette, Allister",
+  "prov": "NS",
+  "province": "Nova Scotia",
+  "affiliation": "ISG",
+  "email": "allister.surette@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/surette-allister/"
+ },
+ {
+  "name": "Anderson, Dawn",
+  "prov": "NT",
+  "province": "Northwest Territories",
+  "affiliation": "C",
+  "email": "margaretdawn.anderson@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/anderson-dawn/"
+ },
+ {
+  "name": "Karetak-Lindell, Nancy",
+  "prov": "NU",
+  "province": "Nunavut",
+  "affiliation": "ISG",
+  "email": "nancy.karetak-lindell@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/karetak-lindell-nancy/"
+ },
+ {
+  "name": "Al Zaibak, Mohammad Khair",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "CSG",
+  "email": "mohammad.alzaibak@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/al-zaibak-mohammad-khair/"
+ },
+ {
+  "name": "Ataullahjan, Salma",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "C",
+  "email": "salma.ataullahjan@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/ataullahjan-salma/"
+ },
+ {
+  "name": "Black, Robert",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "CSG",
+  "email": "robert.black@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/black-robert/"
+ },
+ {
+  "name": "Boehm, Peter M.",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "peter.boehm@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/boehm-peter/"
+ },
+ {
+  "name": "Boyer, Yvonne",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "yvonne.boyer@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/boyer-yvonne/"
+ },
+ {
+  "name": "Burey, Sharon",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "CSG",
+  "email": "sharon.burey@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/burey-sharon/"
+ },
+ {
+  "name": "Cardozo, Andrew",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "PSG",
+  "email": "andrew.cardozo@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/cardozo-andrew/"
+ },
+ {
+  "name": "Clement, Bernadette",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "bernadette.clement@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/clement-bernadette/"
+ },
+ {
+  "name": "Dasko, Donna",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "donna.dasko@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/dasko-donna/"
+ },
+ {
+  "name": "Deacon, Marty",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "marty.deacon@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/deacon-marty/"
+ },
+ {
+  "name": "Dean, Tony",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "tony.dean@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/dean-tony/"
+ },
+ {
+  "name": "Harder, Peter",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "PSG",
+  "email": "peter.harder@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/harder-peter-pc/"
+ },
+ {
+  "name": "Hay, Katherine",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "PSG",
+  "email": "katherine.hay@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/hay-katherine/"
+ },
+ {
+  "name": "McBean, Marnie",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "marnie.mcbean@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/mcbean-marnie/"
+ },
+ {
+  "name": "Mohamed, Farah",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "farah.mohamed@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/mohamed-farah/"
+ },
+ {
+  "name": "Moncion, Lucie",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "lucie.moncion@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/moncion-lucie/"
+ },
+ {
+  "name": "Moodie, Rosemary",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "rosemary.moodie@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/moodie-rosemary/"
+ },
+ {
+  "name": "Pate, Kim",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "kim.pate@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/pate-kim/"
+ },
+ {
+  "name": "Patterson, Rebecca",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "CSG",
+  "email": "rebecca.patterson@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/patterson-rebecca/"
+ },
+ {
+  "name": "Pupatello, Sandra",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "GRO",
+  "email": "sandra.pupatello@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/pupatello-sandra/"
+ },
+ {
+  "name": "Senior, Paulette",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "paulette.senior@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/senior-paulette/"
+ },
+ {
+  "name": "Varone, Toni",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "toni.varone@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/varone-toni/"
+ },
+ {
+  "name": "Yussuff, Hassan",
+  "prov": "ON",
+  "province": "Ontario",
+  "affiliation": "ISG",
+  "email": "h.yussuff@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/yussuff-hassan/"
+ },
+ {
+  "name": "Downe, Percy E.",
+  "prov": "PE",
+  "province": "Prince Edward Island",
+  "affiliation": "CSG",
+  "email": "percy.downe@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/downe-percy-e/"
+ },
+ {
+  "name": "Francis, Brian",
+  "prov": "PE",
+  "province": "Prince Edward Island",
+  "affiliation": "PSG",
+  "email": "brian.francis@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/francis-brian/"
+ },
+ {
+  "name": "MacAdam, Jane",
+  "prov": "PE",
+  "province": "Prince Edward Island",
+  "affiliation": "ISG",
+  "email": "jane.macadam@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/macadam-jane/"
+ },
+ {
+  "name": "Robinson, Mary",
+  "prov": "PE",
+  "province": "Prince Edward Island",
+  "affiliation": "CSG",
+  "email": "mary.robinson@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/robinson-mary/"
+ },
+ {
+  "name": "Audette, Michèle",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "PSG",
+  "email": "michele.audette@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/audette-michele/"
+ },
+ {
+  "name": "Brazeau, Patrick",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "",
+  "email": "patrick.brazeau@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/brazeau-patrick/"
+ },
+ {
+  "name": "Carignan, Claude",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "C",
+  "email": "claude.carignan@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/carignan-claude/"
+ },
+ {
+  "name": "Dalphond, Pierre J.",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "pierrej.dalphond@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/dalphond-pierre/"
+ },
+ {
+  "name": "Forest, Éric",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "eric.forest@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/forest-eric/"
+ },
+ {
+  "name": "Galvez, Rosa",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "rosa.galvez@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/galvez-rosa/"
+ },
+ {
+  "name": "Gerba, Amina",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "PSG",
+  "email": "amina.gerba@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/gerba-amina/"
+ },
+ {
+  "name": "Gignac, Clément",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "CSG",
+  "email": "clement.gignac@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/gignac-clement/"
+ },
+ {
+  "name": "Henkel, Danièle",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "PSG",
+  "email": "daniele.henkel@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/henkel-daniele/"
+ },
+ {
+  "name": "Housakos, Leo",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "C",
+  "email": "leo.housakos@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/housakos-leo/"
+ },
+ {
+  "name": "Hébert, Martine",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "martine.hebert@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/hebert-martine/"
+ },
+ {
+  "name": "Loffreda, Tony",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "tony.loffreda@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/loffreda-tony/"
+ },
+ {
+  "name": "Miville-Dechêne, Julie",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "PSG",
+  "email": "julie.miville-dechene@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/miville-dechene-julie/"
+ },
+ {
+  "name": "Moreau, Pierre",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "GRO",
+  "email": "pierre.moreau@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/moreau-pierre/"
+ },
+ {
+  "name": "Oudar, Manuelle",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "manuelle.oudar@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/oudar-manuelle/"
+ },
+ {
+  "name": "Petitclerc, Chantal",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "chantal.petitclerc@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/petitclerc-chantal/"
+ },
+ {
+  "name": "Saint-Germain, Raymonde",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "raymonde.saint-germain@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/saint-germain-raymonde/"
+ },
+ {
+  "name": "Verner, Josée",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "CSG",
+  "email": "josee.verner@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/verner-josee/"
+ },
+ {
+  "name": "Youance, Suze",
+  "prov": "QC",
+  "province": "Quebec",
+  "affiliation": "ISG",
+  "email": "suze.youance@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/youance-suze/"
+ },
+ {
+  "name": "Arnot, David M.",
+  "prov": "SK",
+  "province": "Saskatchewan",
+  "affiliation": "ISG",
+  "email": "davidm.arnot@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/arnot-david/"
+ },
+ {
+  "name": "Batters, Denise",
+  "prov": "SK",
+  "province": "Saskatchewan",
+  "affiliation": "C",
+  "email": "denise.batters@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/batters-denise/"
+ },
+ {
+  "name": "Klyne, Marty",
+  "prov": "SK",
+  "province": "Saskatchewan",
+  "affiliation": "PSG",
+  "email": "marty.klyne@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/klyne-marty/"
+ },
+ {
+  "name": "Lewis, Todd",
+  "prov": "SK",
+  "province": "Saskatchewan",
+  "affiliation": "CSG",
+  "email": "todd.lewis@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/lewis-todd/"
+ },
+ {
+  "name": "Muggli, Tracy",
+  "prov": "SK",
+  "province": "Saskatchewan",
+  "affiliation": "PSG",
+  "email": "tracy.muggli@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/muggli-tracy/"
+ },
+ {
+  "name": "Wallin, Pamela",
+  "prov": "SK",
+  "province": "Saskatchewan",
+  "affiliation": "CSG",
+  "email": "pamela.wallin@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/wallin-pamela/"
+ },
+ {
+  "name": "Duncan, Pat",
+  "prov": "YT",
+  "province": "Yukon",
+  "affiliation": "GRO",
+  "email": "pat.duncan@sen.parl.gc.ca",
+  "url": "https://sencanada.ca/en/senators/duncan-pat/"
+ }
+]

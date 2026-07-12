@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get the App — What Is the Government Doing</title>
+<meta name="description" content="Install What Is the Government Doing on your phone or computer — free, from your browser, no app store. Nothing about you is recorded.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#f9f6ee">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="simple">
+<div class="shell">
+
+  <header class="masthead">
+    <h1 class="mast-title">Get the app<span class="q">.</span></h1>
+    <p class="mast-sub">This site installs straight from your browser — free, no app store, and it updates itself. It records nothing about you, installed or not.</p>
+    <img class="mast-stamp" src="assets/maple-stamp.png" alt="" aria-hidden="true">
+    <nav class="tabs">
+      <a href="index.html">Take Action</a>
+      <a href="graphics.html">The Record</a>
+      <a href="install.html" class="active">Get the App</a>
+    </nav>
+  </header>
+
+  <section class="block">
+    <div class="eyebrow">Two taps · Pick your device</div>
+
+    <div class="panel install-card" id="card-iphone"><span class="tick-b"></span>
+      <h2 class="section-title">iPhone / iPad</h2>
+      <ol class="steps">
+        <li>Open this site in <strong>Safari</strong>.</li>
+        <li>Tap the <strong>Share</strong> button <span class="key">⬆︎</span> (bottom of the screen).</li>
+        <li>Scroll down and tap <strong>Add to Home Screen</strong>, then <strong>Add</strong>.</li>
+      </ol>
+      <p class="fine-note">The maple-stamp icon lands on your home screen and opens full-screen, like any app.</p>
+    </div>
+
+    <div class="panel install-card" id="card-android"><span class="tick-b"></span>
+      <h2 class="section-title">Android</h2>
+      <ol class="steps">
+        <li>Open this site in <strong>Chrome</strong>.</li>
+        <li>Tap the <strong>⋮ menu</strong> (top right).</li>
+        <li>Tap <strong>Add to Home screen</strong> → <strong>Install</strong>.</li>
+      </ol>
+      <p class="fine-note">Chrome may also offer an <strong>Install app</strong> banner directly — that works too.</p>
+    </div>
+
+    <div class="panel install-card" id="card-desktop"><span class="tick-b"></span>
+      <h2 class="section-title">Computer</h2>
+      <ol class="steps">
+        <li>Open this site in <strong>Chrome</strong> or <strong>Edge</strong>.</li>
+        <li>Click the <strong>install icon</strong> at the right end of the address bar (a screen with a ↓ arrow).</li>
+        <li>Click <strong>Install</strong>.</li>
+      </ol>
+      <p class="fine-note">It opens in its own window and sits in your taskbar / dock like any program.</p>
+    </div>
+
+    <p style="max-width:70ch; color:var(--soft); font-size:13.5px; margin-top:18px;">
+      Why no app store? Because this way is better: nothing to pay, nothing to review, updates arrive
+      the moment we publish them — and the promise on every page holds here too:
+      <strong style="color:var(--acc-dark)">recorded: nothing</strong>.
+    </p>
+  </section>
+
+  <footer>
+    <span>What is the government doing? · Source: LEGISinfo (parl.ca)</span>
+    <span>Non-partisan · We flag mechanisms, not politics</span>
+    <a href="index.html">← Back to Take Action</a>
+  </footer>
+
+</div>
+
+<script>
+  // gently spotlight the visitor's own device — all three stay visible
+  (function () {
+    const ua = navigator.userAgent;
+    const id = /iPhone|iPad|iPod/.test(ua) ? "card-iphone"
+             : /Android/.test(ua) ? "card-android" : "card-desktop";
+    const el = document.getElementById(id);
+    if (el) el.classList.add("install-mine");
+  })();
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-07-11",
+ "generated": "2026-08-26",
  "bills": [
   {
    "bill": "C-22",
@@ -577,6 +577,19 @@ window.SITE_DATA = {
   },
   {
    "section": "Primers",
+   "name": "How To Use This",
+   "images": [
+    "graphics/extras/how-to-use-this/primer-1-cover.png",
+    "graphics/extras/how-to-use-this/primer-2-why-and-idea.png",
+    "graphics/extras/how-to-use-this/primer-3-three-labels.png",
+    "graphics/extras/how-to-use-this/primer-4-how-we-decide.png",
+    "graphics/extras/how-to-use-this/primer-5-the-website.png",
+    "graphics/extras/how-to-use-this/primer-6-why-it-matters.png",
+    "graphics/extras/how-to-use-this/primer-7-the-close.png"
+   ]
+  },
+  {
+   "section": "Primers",
    "name": "How Parliament Works",
    "images": [
     "graphics/extras/how-parliament-works/primer-1-cover.png",
@@ -669,14 +682,6 @@ window.SITE_DATA = {
    "url": "https://sencanada.ca/en/senators/wells-kristopher/"
   },
   {
-   "name": "Busson, Bev",
-   "prov": "BC",
-   "province": "British Columbia",
-   "affiliation": "ISG",
-   "email": "bev.busson@sen.parl.gc.ca",
-   "url": "https://sencanada.ca/en/senators/busson-bev/"
-  },
-  {
    "name": "Dhillon, Baltej S.",
    "prov": "BC",
    "province": "British Columbia",
@@ -741,20 +746,20 @@ window.SITE_DATA = {
    "url": "https://sencanada.ca/en/senators/mccallum-mary-jane/"
   },
   {
-   "name": "McPhedran, Marilou",
-   "prov": "MB",
-   "province": "Manitoba",
-   "affiliation": "",
-   "email": "marilou.mcphedran@sen.parl.gc.ca",
-   "url": "https://sencanada.ca/en/senators/mcphedran-marilou/"
-  },
-  {
    "name": "Osler, Flordeliz (Gigi)",
    "prov": "MB",
    "province": "Manitoba",
    "affiliation": "CSG",
    "email": "flordeliz.osler@sen.parl.gc.ca",
    "url": "https://sencanada.ca/en/senators/osler-flordeliz/"
+  },
+  {
+   "name": "Tucker, Geeta",
+   "prov": "MB",
+   "province": "Manitoba",
+   "affiliation": "",
+   "email": "geeta.tucker@sen.parl.gc.ca",
+   "url": "https://sencanada.ca/en/senators/tucker-geeta/"
   },
   {
    "name": "Arnold, Dawn",
@@ -797,6 +802,14 @@ window.SITE_DATA = {
    "url": "https://sencanada.ca/en/senators/mcnair-john-m/"
   },
   {
+   "name": "Ouellette, Rodney",
+   "prov": "NB",
+   "province": "New Brunswick",
+   "affiliation": "",
+   "email": "rodney.ouellette@sen.parl.gc.ca",
+   "url": "https://sencanada.ca/en/senators/ouellette-rodney/"
+  },
+  {
    "name": "Poirier, Rose-May",
    "prov": "NB",
    "province": "New Brunswick",
@@ -808,7 +821,7 @@ window.SITE_DATA = {
    "name": "Quinn, Jim",
    "prov": "NB",
    "province": "New Brunswick",
-   "affiliation": "CSG",
+   "affiliation": "C",
    "email": "jim.quinn@sen.parl.gc.ca",
    "url": "https://sencanada.ca/en/senators/quinn-jim/"
   },
@@ -957,14 +970,6 @@ window.SITE_DATA = {
    "url": "https://sencanada.ca/en/senators/karetak-lindell-nancy/"
   },
   {
-   "name": "Al Zaibak, Mohammad Khair",
-   "prov": "ON",
-   "province": "Ontario",
-   "affiliation": "CSG",
-   "email": "mohammad.alzaibak@sen.parl.gc.ca",
-   "url": "https://sencanada.ca/en/senators/al-zaibak-mohammad-khair/"
-  },
-  {
    "name": "Ataullahjan, Salma",
    "prov": "ON",
    "province": "Ontario",
@@ -1019,14 +1024,6 @@ window.SITE_DATA = {
    "affiliation": "ISG",
    "email": "bernadette.clement@sen.parl.gc.ca",
    "url": "https://sencanada.ca/en/senators/clement-bernadette/"
-  },
-  {
-   "name": "Dasko, Donna",
-   "prov": "ON",
-   "province": "Ontario",
-   "affiliation": "ISG",
-   "email": "donna.dasko@sen.parl.gc.ca",
-   "url": "https://sencanada.ca/en/senators/dasko-donna/"
   },
   {
    "name": "Deacon, Marty",
@@ -1269,6 +1266,14 @@ window.SITE_DATA = {
    "url": "https://sencanada.ca/en/senators/loffreda-tony/"
   },
   {
+   "name": "Martel, Richard",
+   "prov": "QC",
+   "province": "Quebec",
+   "affiliation": "",
+   "email": "richard.martel@sen.parl.gc.ca",
+   "url": "https://sencanada.ca/en/senators/martel-richard/"
+  },
+  {
    "name": "Miville-Dechêne, Julie",
    "prov": "QC",
    "province": "Quebec",
@@ -1347,14 +1352,6 @@ window.SITE_DATA = {
    "affiliation": "PSG",
    "email": "marty.klyne@sen.parl.gc.ca",
    "url": "https://sencanada.ca/en/senators/klyne-marty/"
-  },
-  {
-   "name": "Lewis, Todd",
-   "prov": "SK",
-   "province": "Saskatchewan",
-   "affiliation": "CSG",
-   "email": "todd.lewis@sen.parl.gc.ca",
-   "url": "https://sencanada.ca/en/senators/lewis-todd/"
   },
   {
    "name": "Muggli, Tracy",

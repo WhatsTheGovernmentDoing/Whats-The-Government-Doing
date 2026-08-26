@@ -30,7 +30,21 @@ UA = {"User-Agent": "whats-the-government-doing site sync"}
 def fetch_session_bills(session):
     req = urllib.request.Request(API_URL.format(session=session), headers=UA)
     with urllib.request.urlopen(req, timeout=60) as resp:
-        return json.load(resp)
+        return [_normalize(b) for b in json.load(resp)]
+
+
+def _normalize(raw):
+    """Rebuild the pre-2026-08 field names this script reads.
+
+    Parliament restructured the list feed (NumberCode / StatusNameEn replaced
+    BillNumberFormatted / CurrentStatusEn); fetch_bills.py carries the same
+    shim. Only the two fields used below need rebuilding — the royal-assent
+    timestamp kept its name.
+    """
+    b = dict(raw)
+    b["BillNumberFormatted"] = raw.get("NumberCode") or raw.get("BillNumberFormatted") or ""
+    b["CurrentStatusEn"] = raw.get("StatusNameEn") or raw.get("CurrentStatusEn") or ""
+    return b
 
 
 def classify(status_en, royal_assent):

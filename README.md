@@ -126,6 +126,12 @@ host-provided analytics to keep the "records nothing" promise literal. The only 
 money can buy here is a custom domain (~$15/yr, optional) — the .netlify.app /
 .github.io subdomains are free.
 
+**Install discoverability:** a small dismissible bottom-right pill ("Get this as an app →",
+`assets/install.js`) appears on both pages — on Chrome/Edge/Android it triggers the native
+install dialog directly; elsewhere it opens `install.html` (per-device instructions, visitor's
+device auto-highlighted). Hidden when already installed; dismissal is remembered on-device only.
+A static footer link keeps it discoverable after dismissal.
+
 **It is also an installable app (PWA).** `manifest.webmanifest` + `sw.js` + generated
 icons (`assets/icons/`, rebuilt by build_site.py from the maple stamp) make the hosted
 site installable: Android/desktop Chrome shows an "Install app" prompt; iOS Safari uses

@@ -47,8 +47,12 @@ def _normalize(raw):
     return b
 
 
-def classify(status_en, royal_assent):
-    """LEGISinfo CurrentStatusEn -> (site status key, law_date or None)."""
+def classify(status_en, royal_assent, session_ongoing=True):
+    """LEGISinfo CurrentStatusEn -> (site status key, law_date or None).
+
+    session_ongoing comes from the feed's IsSessionOngoing and is what
+    separates "lapsed" from a genuinely live stage.
+    """
     s = (status_en or "").lower()
 
     if "royal assent received" in s or royal_assent:
@@ -60,8 +64,22 @@ def classify(status_en, royal_assent):
         return "law", date
     if "awaiting royal assent" in s:
         return "awaiting-ra", None
-    if any(w in s for w in ("defeated", "not proceeded with", "withdrawn", "died")):
-        return "died", None
+
+    # How a bill ENDED, split three ways (2026-08-27). These used to collapse
+    # into one "died" bucket, which was misleading: in session 44-1, 319 bills
+    # ended without becoming law, but only 30 of them were actually rejected.
+    # 273 simply ran out of clock — those are the ones that come back under a
+    # new number, and the reintroduction trail needs to see them as distinct.
+    if "defeat" in s:
+        return "defeated", None          # Parliament voted it down
+    if "not proceeded with" in s or "withdraw" in s:
+        return "withdrawn", None         # the sponsor stopped advancing it
+    if not session_ongoing:
+        # LEGISinfo never marks a bill as having died on the Order Paper — the
+        # status just freezes at whatever stage it had reached. So a bill still
+        # showing a live stage in a session that has ENDED was never rejected;
+        # it lapsed. IsSessionOngoing is the only honest signal for this.
+        return "lapsed", None
 
     if "awaiting first reading in the senate" in s:
         return "senate-1st", None
@@ -108,7 +126,11 @@ def sync():
                 print(f"  ? {code}: not found in LEGISinfo {session} — skipped")
                 continue
             status_en = b.get("CurrentStatusEn", "")
-            new_status, law_date = classify(status_en, b.get("ReceivedRoyalAssentDateTime"))
+            new_status, law_date = classify(
+                status_en,
+                b.get("ReceivedRoyalAssentDateTime"),
+                b.get("IsSessionOngoing", True),
+            )
             if new_status is None:
                 print(f"  ? {code}: unrecognized status '{status_en}' — left alone")
                 continue
@@ -172,8 +194,12 @@ def main():
     if "--no-deploy" in sys.argv:
         print("(--no-deploy: skipping deploy)")
         return
+    # --mechanical: the deploy may push edits to existing files only. If the
+    # working tree contains added/deleted/renamed files, it publishes nothing
+    # and reports them instead — those have not been through the human gate.
     subprocess.run(
-        [sys.executable, str(SITE / "deploy.py"), "--message", "mechanical stage sync"],
+        [sys.executable, str(SITE / "deploy.py"),
+         "--message", "mechanical stage sync", "--mechanical"],
         check=True,
     )
 

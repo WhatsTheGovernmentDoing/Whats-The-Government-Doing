@@ -37,7 +37,7 @@
   const WANT = (PARAMS.get("bill") || "").toUpperCase();
   const MODE =
     PARAMS.get("file") === "enacted" ||
-    (WANT && byCode[WANT] && byCode[WANT].status === "law")
+    (WANT && byCode[WANT] && isClosed(byCode[WANT]))
       ? "enacted"
       : "active";
 
@@ -212,6 +212,64 @@
     return b.status === "senate" || b.status.startsWith("senate-");
   }
 
+  // Bills whose run ended WITHOUT becoming law. Split three ways because they
+  // mean very different things — in session 44-1, 319 bills ended this way but
+  // only 30 were actually rejected. Calling them all "no longer proceeding"
+  // tells a reader a bill is finished when it is really just waiting.
+  // "died" is the pre-2026-08-27 value, kept so old files still read correctly.
+  const ENDED = {
+    defeated: {
+      tail: "defeated",
+      line: "Parliament voted this bill down.",
+    },
+    withdrawn: {
+      tail: "withdrawn",
+      line: "The sponsor stopped advancing it.",
+    },
+    lapsed: {
+      tail: "lapsed when the session ended",
+      line:
+        "Not rejected — the session ended before it finished. " +
+        "Bills like this often return under a new number.",
+    },
+  };
+  ENDED.died = ENDED.lapsed; // legacy alias
+
+  function endedInfo(b) {
+    return ENDED[b.status] || null;
+  }
+
+  // A bill leaves the ACTIVE file when its run is over — it became law, or it
+  // ended one of the three ways above. All stay on the site; none can be voted
+  // on any more, which is what the active/closed split actually means.
+  function isClosed(b) {
+    return b.status === "law" || !!endedInfo(b);
+  }
+
+  // Plain-language stage, shown in the picker so the current position is
+  // visible without opening a bill. Keys come straight from sync_status.py.
+  const STAGE_SHORT = {
+    "house-1st": "first reading, House",
+    "house-2nd": "second reading, House",
+    "house-committee": "in committee, House",
+    "house-report": "report stage, House",
+    "house-3rd": "third reading, House",
+    "senate-1st": "first reading, Senate",
+    "senate-2nd": "second reading, Senate",
+    "senate-committee": "in committee, Senate",
+    "senate-report": "report stage, Senate",
+    "senate-3rd": "third reading, Senate",
+    "awaiting-ra": "awaiting royal assent",
+  };
+
+  function stageTail(b) {
+    if (b.status === "law") return b.law_date ? ` · law since ${b.law_date}` : " · now law";
+    const ended = endedInfo(b);
+    if (ended) return ` · ${ended.tail}`;
+    const short = STAGE_SHORT[b.status];
+    return short ? ` · ${short}` : "";
+  }
+
   function stageKey(b) {
     if (b.status === "senate") return "senate-1st"; // legacy alias
     if (STAGE_ASK[b.status]) return b.status;
@@ -323,8 +381,7 @@
       group.forEach((b) => {
         const o = document.createElement("option");
         o.value = b.bill;
-        const tail = withDate && b.law_date ? ` · law since ${b.law_date}` : "";
-        o.textContent = `${b.bill} — ${b.descriptor}${tail}`;
+        o.textContent = `${b.bill} — ${b.descriptor}${stageTail(b)}`;
         og.appendChild(o);
       });
       sel.appendChild(og);
@@ -337,17 +394,17 @@
     tab.classList.remove("hidden");
     tab.classList.add("active");
     $("tab-action").classList.remove("active");
-    $("bill-select-label").textContent = "The enacted file — now law, still answerable";
+    $("bill-select-label").textContent = "The closed file — now law, or no longer proceeding";
     $("enacted-note").classList.remove("hidden");
-    document.title = "The Enacted File — What Is the Government Doing";
+    document.title = "The Closed File — What Is the Government Doing";
   }
 
   function populateSelect() {
     const enacted = MODE === "enacted";
     fillSelect(
       $("bill-select"),
-      BILLS.filter((b) => (b.status === "law") === enacted),
-      enacted ? "— Select an enacted bill —" : "— Select a bill before Parliament —",
+      BILLS.filter((b) => isClosed(b) === enacted),
+      enacted ? "— Select a closed bill —" : "— Select a bill before Parliament —",
       enacted
     );
   }
@@ -357,6 +414,8 @@
   function renderBill(b) {
     current = b;
     const isLaw = b.status === "law";
+    const ended = endedInfo(b);
+    const isDead = !!ended;
 
     $("bill-select").value = b.bill;
 
@@ -365,6 +424,11 @@
       $("recipient").classList.remove("hidden");
       $("letter-section").classList.remove("hidden");
     }
+
+    // Nothing to ask a member to vote on once a bill has stopped proceeding,
+    // so the letter tool is withheld rather than generating a dead request.
+    $("recipient").classList.toggle("hidden", isDead);
+    $("letter-section").classList.toggle("hidden", isDead);
 
     $("bill-detail").classList.remove("hidden");
     $("bh-code").textContent = b.bill;
@@ -375,7 +439,9 @@
     lawChip.classList.toggle("hidden", !isLaw);
     if (isLaw) lawChip.textContent = `Law since ${b.law_date || ""}`.trim();
     $("bh-desc").textContent = b.descriptor;
-    $("bh-status").textContent = `Status — ${b.status_label}`;
+    $("bh-status").textContent = ended
+      ? `Status — ${b.status_label} · ${ended.line}`
+      : `Status — ${b.status_label}`;
     $("bh-legis").href = b.legisinfo;
     $("bh-lead").textContent = b.lead;
 

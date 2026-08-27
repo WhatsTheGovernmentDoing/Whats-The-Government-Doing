@@ -1,0 +1,6 @@
+# Housekeeping that must never reach the public site — and, since the
+# mechanical-sync guard refuses to publish when untracked files exist,
+# must never jam the daily deploy either.
+__pycache__/
+*.pyc
+*.bak

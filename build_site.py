@@ -56,6 +56,10 @@ def copy_pngs(src_dir: Path, dest_dir: Path, web_prefix: str):
     return out
 
 
+# Ended without becoming law. "died" predates the 2026-08-27 three-way split.
+ENDED_STATUSES = {"defeated", "withdrawn", "lapsed", "died"}
+
+
 def build_bills(graphics_root: Path):
     bills = []
     for aj in sorted(ROOT.glob("Bills/*/action.json")):
@@ -63,9 +67,13 @@ def build_bills(graphics_root: Path):
         if data.get("draft"):
             print(f"  (draft, excluded from site: {data['bill']} — awaiting approval)")
             continue
-        if data.get("status") == "died":
-            print(f"  (died, excluded from site: {data['bill']})")
-            continue
+        # A bill that ended without becoming law is NOT removed from the site
+        # (changed 2026-08-27). Deleting it silently rewrote the record: a
+        # reader who had acted on it got a dead link and no explanation. It now
+        # moves to the closed file, labelled with HOW it ended — defeated,
+        # withdrawn, or lapsed when the session ended. "died" is the legacy key.
+        if data.get("status") in ENDED_STATUSES:
+            print(f"  ({data.get('status')}, moved to the closed file: {data['bill']})")
         folder = aj.parent
         carousel = None
         for name in ("high-stakes-carousel", "watch-carousel"):

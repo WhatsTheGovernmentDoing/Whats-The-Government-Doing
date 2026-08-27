@@ -32,10 +32,34 @@ def git(*args, check=True):
     )
 
 
+def classify_changes(porcelain: str):
+    """Split `git status --porcelain` into (mechanical, needs_approval).
+
+    A mechanical stage sync only ever EDITS files that already exist —
+    assets/data.js and senators.json. It never creates, deletes or renames
+    anything. So anything that isn't a plain modification of a tracked file
+    came from somewhere else and has not been through the human gate.
+    """
+    mechanical, needs_approval = [], []
+    for line in porcelain.splitlines():
+        if not line.strip():
+            continue
+        code, path = line[:2], line[3:].strip()
+        # 'M' in either column = modified tracked file. '??' = untracked/new,
+        # 'A' = added, 'D' = deleted, 'R' = renamed.
+        if set(code.strip()) <= {"M"} and code.strip():
+            mechanical.append(path)
+        else:
+            needs_approval.append(f"{code.strip() or '??'} {path}")
+    return mechanical, needs_approval
+
+
 def main():
     msg = f"site update {date.today().isoformat()}"
     if "--message" in sys.argv:
         msg = sys.argv[sys.argv.index("--message") + 1] + f" ({date.today().isoformat()})"
+
+    mechanical_only = "--mechanical" in sys.argv
 
     if not (SITE / ".git").exists():
         print("Site/ is not a git repository yet — one-time setup needed:")
@@ -47,7 +71,44 @@ def main():
         print("Nothing to deploy — working tree clean.")
         return
 
-    git("add", "-A")
+    if mechanical_only:
+        # ---------------------------------------------------------------
+        # THE GUARD (added 2026-08-27).
+        # Before this, sync_status.py called a plain `git add -A`, which
+        # published whatever happened to be sitting in Site/. On 2026-08-26
+        # that swept up a 7-slide primer that had been waiting since July 12
+        # and put it on the public site without anyone approving it.
+        # A mechanical sync may now ONLY push edits to existing files.
+        # ---------------------------------------------------------------
+        mechanical, needs_approval = classify_changes(status)
+        if needs_approval:
+            print("HELD — this is a mechanical sync, but the working tree has changes")
+            print("that add, delete or rename files. Those never come from a stage sync,")
+            print("so nothing was published. Nothing has been lost; it is all still here.")
+            print()
+            for item in needs_approval:
+                print(f"    {item}")
+            print()
+            print("If you meant to publish these, review them and run:")
+            print('    python "Site/deploy.py" --message "your description"')
+            print()
+            print("The site was NOT updated, including the stage changes, because")
+            print("assets/data.js may reference the files above.")
+            sys.exit(0)
+
+        if not mechanical:
+            print("Nothing mechanical to deploy.")
+            return
+        for path in mechanical:
+            git("add", "--", path)
+    else:
+        git("add", "-A")
+
+    staged = git("diff", "--cached", "--name-only").stdout.strip()
+    if not staged:
+        print("Nothing staged — nothing to deploy.")
+        return
+
     git("commit", "-m", msg)
     push = git("push", check=False)
     if push.returncode != 0:
@@ -55,8 +116,9 @@ def main():
         print(push.stderr.strip())
         print("(Check the remote / your GitHub sign-in, then run: python Site/deploy.py)")
         sys.exit(1)
-    n = len(status.splitlines())
-    print(f"Deployed: {n} file(s) changed — '{msg}'")
+    n = len(staged.splitlines())
+    label = "mechanical " if mechanical_only else ""
+    print(f"Deployed ({label}): {n} file(s) changed — '{msg}'")
     print("GitHub Pages updates within ~1 minute.")
 
 

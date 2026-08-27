@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-08-26",
+ "generated": "2026-08-27",
  "bills": [
   {
    "bill": "C-22",

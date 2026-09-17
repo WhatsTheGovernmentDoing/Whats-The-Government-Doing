@@ -31,16 +31,6 @@
 
   const $ = (id) => document.getElementById(id);
 
-  // The enacted file lives behind a hidden tab: default view = active bills only.
-  // Enacted mode engages via ?file=enacted or a deep link to a bill that is law.
-  const PARAMS = new URLSearchParams(location.search);
-  const WANT = (PARAMS.get("bill") || "").toUpperCase();
-  const MODE =
-    PARAMS.get("file") === "enacted" ||
-    (WANT && byCode[WANT] && isClosed(byCode[WANT]))
-      ? "enacted"
-      : "active";
-
   /* ---------------- letter templates ---------------- */
 
   // appended to the lead as one paragraph — the sample's "…it makes three
@@ -246,6 +236,20 @@
     return b.status === "law" || !!endedInfo(b);
   }
 
+  // The enacted file lives behind a hidden tab: default view = active bills only.
+  // Enacted mode engages via ?file=enacted or a deep link to a closed bill.
+  // Must sit BELOW ENDED: isClosed() reads it, and a `const` read before its
+  // line throws. When this block lived at the top of the file, every ?bill=
+  // deep link (i.e. every caption link) killed the script and left an empty
+  // dropdown — live from 2026-08-27 until 2026-09-17.
+  const PARAMS = new URLSearchParams(location.search);
+  const WANT = (PARAMS.get("bill") || "").toUpperCase();
+  const MODE =
+    PARAMS.get("file") === "enacted" ||
+    (WANT && byCode[WANT] && isClosed(byCode[WANT]))
+      ? "enacted"
+      : "active";
+
   // Plain-language stage, shown in the picker so the current position is
   // visible without opening a bill. Keys come straight from sync_status.py.
   const STAGE_SHORT = {
@@ -448,7 +452,12 @@
     const rec = $("bh-record-wrap");
     if (b.graphics && b.graphics.length) {
       rec.classList.remove("hidden");
+      // href stays a real link (new-tab / no-JS fallback); a plain click opens
+      // the slide viewer on this page instead — see "graphic viewer" below
       $("bh-record").href = `graphics.html#${b.bill}`;
+      const label = $("bh-record-text");
+      if (label)
+        label.textContent = `Read our graphic on this bill · ${b.graphics.length} slides`;
     } else {
       rec.classList.add("hidden");
     }
@@ -658,7 +667,111 @@
     done();
   }
 
+  /* ---------------- graphic viewer (the bill's carousel, read in place) ----------------
+     A popup over the action page so a visitor can read what the bill does
+     without leaving their letter. Built here rather than in the HTML so every
+     page that loads app.js gets it. Same embedded images The Record uses —
+     no network beyond the site's own PNGs, nothing stored. */
+
+  const viewer = { el: null, img: null, count: null, prev: null, next: null, done: null,
+                   images: [], index: 0, bill: null, opener: null, touchX: null };
+
+  function buildViewer() {
+    const v = document.createElement("div");
+    v.className = "lightbox viewer";
+    v.id = "graphic-viewer";
+    v.setAttribute("role", "dialog");
+    v.setAttribute("aria-modal", "true");
+    v.setAttribute("aria-label", "Bill graphic");
+    v.innerHTML =
+      '<button class="lb-btn lb-close" aria-label="Close">×</button>' +
+      '<button class="lb-btn lb-prev" aria-label="Previous slide">‹</button>' +
+      '<img alt="">' +
+      '<button class="lb-btn lb-next" aria-label="Next slide">›</button>' +
+      '<div class="viewer-bar"><span class="lb-count"></span>' +
+      '<button class="viewer-done hidden">Back to the letter →</button></div>';
+    document.body.appendChild(v);
+
+    viewer.el = v;
+    viewer.img = v.querySelector("img");
+    viewer.count = v.querySelector(".lb-count");
+    viewer.prev = v.querySelector(".lb-prev");
+    viewer.next = v.querySelector(".lb-next");
+    viewer.done = v.querySelector(".viewer-done");
+
+    v.querySelector(".lb-close").addEventListener("click", closeViewer);
+    viewer.done.addEventListener("click", closeViewer);
+    viewer.prev.addEventListener("click", () => stepViewer(-1));
+    viewer.next.addEventListener("click", () => stepViewer(1));
+    // click the dark surround to close; click the slide itself to advance
+    v.addEventListener("click", (e) => { if (e.target === v) closeViewer(); });
+    viewer.img.addEventListener("click", () => stepViewer(1));
+
+    v.addEventListener("touchstart", (e) => { viewer.touchX = e.touches[0].clientX; }, { passive: true });
+    v.addEventListener("touchend", (e) => {
+      if (viewer.touchX == null) return;
+      const dx = e.changedTouches[0].clientX - viewer.touchX;
+      viewer.touchX = null;
+      if (Math.abs(dx) > 45) stepViewer(dx < 0 ? 1 : -1);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!v.classList.contains("open")) return;
+      if (e.key === "Escape") closeViewer();
+      if (e.key === "ArrowLeft") stepViewer(-1);
+      if (e.key === "ArrowRight") stepViewer(1);
+    });
+  }
+
+  function showSlide() {
+    const n = viewer.images.length;
+    const i = viewer.index;
+    viewer.img.src = viewer.images[i];
+    viewer.img.alt = `Bill ${viewer.bill.bill}: ${viewer.bill.descriptor} — slide ${i + 1} of ${n}`;
+    viewer.count.textContent = `${viewer.bill.bill} · ${i + 1} / ${n}`;
+    // a read-through, not a loop: the ends stop, and the last slide hands back
+    viewer.prev.disabled = i === 0;
+    viewer.next.disabled = i === n - 1;
+    viewer.done.classList.toggle("hidden", i !== n - 1);
+    // an ended bill carries no letter to go back to
+    viewer.done.textContent = endedInfo(viewer.bill) ? "Close" : "Back to the letter →";
+    if (i + 1 < n) new Image().src = viewer.images[i + 1]; // warm the next slide
+  }
+
+  function stepViewer(delta) {
+    const i = viewer.index + delta;
+    if (i < 0 || i >= viewer.images.length) return;
+    viewer.index = i;
+    showSlide();
+  }
+
+  function openViewer(b) {
+    if (!b || !b.graphics || !b.graphics.length) return;
+    if (!viewer.el) buildViewer();
+    viewer.bill = b;
+    viewer.images = b.graphics;
+    viewer.index = 0;
+    viewer.opener = document.activeElement;
+    showSlide();
+    viewer.el.classList.add("open");
+    document.body.classList.add("viewer-open");
+    viewer.el.querySelector(".lb-close").focus();
+  }
+
+  function closeViewer() {
+    viewer.el.classList.remove("open");
+    document.body.classList.remove("viewer-open");
+    if (viewer.opener && viewer.opener.focus) viewer.opener.focus();
+  }
+
   /* ---------------- init ---------------- */
+
+  $("bh-record").addEventListener("click", (e) => {
+    // leave ctrl/cmd/shift/middle clicks alone — those still open The Record
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+    e.preventDefault();
+    openViewer(current);
+  });
 
   applyMode();
   populateSelect();

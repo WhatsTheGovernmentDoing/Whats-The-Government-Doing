@@ -256,6 +256,63 @@ button:disabled:hover { background: transparent; color: var(--ink); }
   font-family: var(--mono); font-size: 12px; letter-spacing: .2em; color: var(--paper);
 }
 
+/* ---------- "read our graphic" button + its popup viewer (action page) ---------- */
+
+/* a small file-tab of a button: sits in the mono links row, reads as paper, not as a CTA */
+.graphic-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: .04em;
+  text-decoration: none; color: var(--ink); background: var(--paper-deep);
+  border: 1px solid var(--ink); border-radius: 2px;
+  padding: 3px 9px 3px 7px; margin: 4px 0; vertical-align: middle; white-space: nowrap;
+  box-shadow: 2px 2px 0 rgba(28, 27, 24, .14);
+}
+.graphic-btn:hover { color: var(--paper); background: var(--ink); }
+.graphic-btn:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; }
+/* two stacked slides, drawn in borders */
+.gb-icon {
+  position: relative; width: 9px; height: 11px; margin: 0 3px 2px 0;
+  border: 1.5px solid currentColor; background: var(--paper);
+  box-shadow: 3px 3px 0 -1.5px var(--paper), 3px 3px 0 0 currentColor; flex: 0 0 auto;
+}
+.graphic-btn:hover .gb-icon { background: var(--acc); box-shadow: 3px 3px 0 -1.5px var(--ink), 3px 3px 0 0 currentColor; }
+@media (max-width: 640px) { .graphic-btn { white-space: normal; } }
+
+body.viewer-open { overflow: hidden; }
+.viewer { flex-direction: column; gap: 10px; padding: 46px 0 12px; background: rgba(28, 27, 24, .96); }
+.viewer img {
+  max-width: min(92vw, 600px); max-height: calc(100vh - 116px); max-height: calc(100dvh - 116px);
+  width: auto; height: auto; background: var(--paper); cursor: pointer;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .45);
+}
+.viewer .lb-btn:disabled { visibility: hidden; }
+.viewer .lb-btn:focus-visible { outline: 2px solid var(--acc); outline-offset: -6px; }
+.viewer .lb-close { top: 4px; right: 8px; padding: 8px 16px; }
+.viewer-bar { display: flex; align-items: center; gap: 18px; min-height: 34px; }
+.viewer .lb-count { position: static; transform: none; }
+.viewer-done {
+  font-size: 11px; padding: 7px 12px; color: var(--paper); border: 1px solid var(--paper);
+}
+.viewer-done:hover { background: var(--paper); color: var(--ink); }
+@media (min-width: 760px) {
+  /* arrows hug the slide instead of the screen edges */
+  .viewer .lb-prev { left: calc(50% - 390px); }
+  .viewer .lb-next { right: calc(50% - 390px); }
+}
+@media (max-width: 759px) {
+  /* no room beside the slide: arrows flank the counter in a row under it; swipe also works */
+  .viewer.open {
+    display: grid; grid-template-columns: auto 1fr auto; grid-template-rows: auto auto;
+    align-content: center; justify-items: center; align-items: center; gap: 6px 0;
+  }
+  .viewer img { grid-column: 1 / -1; grid-row: 1; max-height: calc(100vh - 130px); max-height: calc(100dvh - 130px); }
+  .viewer .lb-prev, .viewer .lb-next {
+    position: static; transform: none; grid-row: 2; font-size: 34px; line-height: 1; padding: 2px 22px 8px;
+  }
+  .viewer .lb-prev { grid-column: 1; } .viewer .lb-next { grid-column: 3; }
+  .viewer-bar { grid-row: 2; grid-column: 2; flex-wrap: wrap; justify-content: center; gap: 6px 14px; }
+}
+
 /* ---------- privacy + footer ---------- */
 
 .privacy {

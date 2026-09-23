@@ -2,7 +2,7 @@
 
 Reads  Bills/<n>/action.json  (letter content, one per publishable bill)
        Bills/<n>/high-stakes-carousel | watch-carousel  (slide PNGs)
-       Roundups/*, Primers/*, Glossary, Progress-Updates/*  (extra graphics)
+       Roundups/*, Progress-Updates/*, Evergreen/*  (extra graphics)
 Writes Site/assets/data.js  (window.SITE_DATA — embedded so the site works
        from file:// with zero fetches) and copies all graphics + fonts in.
 
@@ -101,12 +101,16 @@ def prettify(name: str) -> str:
 
 
 def build_extras(graphics_root: Path):
-    """Roundups / Primers / Glossary / Progress-Updates -> gallery sections."""
+    """Roundups / Progress-Updates / Evergreen -> gallery sections.
+
+    Evergreen holds every standing, non-bill graphic the channel posts (the primers,
+    the glossary, the Charter reference), one subfolder per piece — so it needs no
+    special case here: it is a folder of folders exactly like the other two."""
     extras = []
     sources = [
         ("Roundups", "Weekly Roundups"),
         ("Progress-Updates", "Progress Updates"),
-        ("Primers", "Primers"),
+        ("Evergreen", "Reference & Primers"),
     ]
     for folder, section in sources:
         base = ROOT / folder
@@ -120,13 +124,6 @@ def build_extras(graphics_root: Path):
                 extras.append(
                     {"section": section, "name": prettify(d.name), "images": images}
                 )
-    gl = ROOT / "Glossary"
-    if gl.is_dir():
-        images = copy_pngs(gl, graphics_root / "extras" / "glossary", "graphics/extras/glossary")
-        if images:
-            extras.append(
-                {"section": "Reference", "name": "Plain-Language Glossary", "images": images}
-            )
     return extras
 
 

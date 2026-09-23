@@ -66,8 +66,13 @@ def main():
         print(__doc__.split("One-time setup")[1])
         sys.exit(1)
 
-    status = git("status", "--porcelain").stdout.strip()
-    if not status:
+    # NOTE: rstrip("\n") only, never .strip() — porcelain's first column is a
+    # space for worktree-only changes (" M assets/data.js"). Stripping the whole
+    # block ate that space on the FIRST line, shifting the path slice by one and
+    # producing "ssets/data.js", which crashed `git add`. That silently broke
+    # every mechanical sync between 2026-08-27 and 2026-09-10.
+    status = git("status", "--porcelain").stdout.rstrip("\n")
+    if not status.strip():
         print("Nothing to deploy — working tree clean.")
         return
 

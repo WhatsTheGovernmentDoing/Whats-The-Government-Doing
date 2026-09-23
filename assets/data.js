@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-08-27",
+ "generated": "2026-09-22",
  "bills": [
   {
    "bill": "C-22",
@@ -83,6 +83,54 @@ window.SITE_DATA = {
     "graphics/C-29/C29-4-the-pattern.png",
     "graphics/C-29/C29-5-the-balance.png",
     "graphics/C-29/C29-6-weigh-in.png"
+   ]
+  },
+  {
+   "bill": "C-39",
+   "session": "45-1",
+   "register": "alarm",
+   "descriptor": "Transport security clearances cancelled with no reason required",
+   "topic_ref": "transportation security clearances and trade-data sharing",
+   "status": "house-2nd",
+   "status_label": "At second reading in the House of Commons",
+   "lead": "Inside a bill about pipelines, ports and permits, C-39 lets the Minister of Transport cancel any person's transportation security clearance, and with it their job, without anything in the Act requiring that they be told why or be able to challenge the decision.",
+   "points": [
+    {
+     "text": "It lets the Minister grant, suspend or cancel any individual's security clearance, and sets no notice, no reasons, no chance to respond and no appeal in the Act; the grounds and process are left entirely to regulations",
+     "cite": "ss. 54.1(1), 54.4(c)",
+     "consequence": "A decision that never has to give a reason cannot be meaningfully checked, by the person affected, by a court, or by Parliament. That is where error and abuse go unnoticed."
+    },
+    {
+     "text": "It lets Cabinet add new reasons for cancelling a clearance \"for any purpose specified by order of the Governor in Council\", by orders exempt from the Statutory Instruments Act",
+     "cite": "s. 54.1(2)–(3)",
+     "consequence": "The grounds for losing a clearance can widen without the publication and scrutiny that ordinary regulations get."
+    },
+    {
+     "text": "It lets CSIS, the RCMP, CBSA and Immigration collect from and disclose to one another to run the system, and lets the Minister share clearance information with foreign governments",
+     "cite": "ss. 54.2, 54.3",
+     "consequence": "The file behind an unexplained decision is built from intelligence, police, border and immigration records, and can travel beyond Canada."
+    },
+    {
+     "text": "It lets import and export information that a person gave the government move between federal departments despite the confidentiality protections of the Income Tax Act and the Customs Act, and lets Cabinet add more laws to that override by order",
+     "cite": "Enabling Digital Trade Act s. 26",
+     "consequence": "Information given under one law's confidentiality promise can be reused elsewhere, with no purpose limit in the Act."
+    }
+   ],
+   "unclear": [
+    {
+     "text": "the limits on how clearance information may be used and disclosed are left to regulations not yet written",
+     "cite": "s. 54.4(g)"
+    }
+   ],
+   "credit": "The bill does draw some lines: the trade-data sharing reaches only officials already legally allowed to collect that information (s. 26(1)), and it does not invoke the notwithstanding clause. The clearance provisions above are not touched by either.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-39",
+   "graphics": [
+    "graphics/C-39/C39-1-name-vs-reality.png",
+    "graphics/C-39/C39-2-what-it-does.png",
+    "graphics/C-39/C39-3-means-for-you.png",
+    "graphics/C-39/C39-4-the-pattern.png",
+    "graphics/C-39/C39-5-the-balance.png",
+    "graphics/C-39/C39-6-weigh-in.png"
    ]
   },
   {
@@ -576,7 +624,21 @@ window.SITE_DATA = {
    ]
   },
   {
-   "section": "Primers",
+   "section": "Reference & Primers",
+   "name": "Master Glossary",
+   "images": [
+    "graphics/extras/master-glossary/master-glossary-1.png",
+    "graphics/extras/master-glossary/master-glossary-2.png",
+    "graphics/extras/master-glossary/master-glossary-3.png",
+    "graphics/extras/master-glossary/master-glossary-4.png",
+    "graphics/extras/master-glossary/master-glossary-5.png",
+    "graphics/extras/master-glossary/master-glossary-6.png",
+    "graphics/extras/master-glossary/master-glossary-7.png",
+    "graphics/extras/master-glossary/master-glossary-8.png"
+   ]
+  },
+  {
+   "section": "Reference & Primers",
    "name": "How To Use This",
    "images": [
     "graphics/extras/how-to-use-this/primer-1-cover.png",
@@ -589,7 +651,7 @@ window.SITE_DATA = {
    ]
   },
   {
-   "section": "Primers",
+   "section": "Reference & Primers",
    "name": "How Parliament Works",
    "images": [
     "graphics/extras/how-parliament-works/primer-1-cover.png",
@@ -604,12 +666,13 @@ window.SITE_DATA = {
    ]
   },
   {
-   "section": "Primers",
+   "section": "Reference & Primers",
    "name": "How A Bill Becomes Law",
    "images": [
     "graphics/extras/how-a-bill-becomes-law/primer-1-cover.png",
     "graphics/extras/how-a-bill-becomes-law/primer-2-path-commons.png",
     "graphics/extras/how-a-bill-becomes-law/primer-3-path-senate.png",
+    "graphics/extras/how-a-bill-becomes-law/primer-4-stage-is-not-support.png",
     "graphics/extras/how-a-bill-becomes-law/primer-5-read-the-sponsor.png",
     "graphics/extras/how-a-bill-becomes-law/primer-6-die-and-return.png",
     "graphics/extras/how-a-bill-becomes-law/primer-7-rules-come-later.png",
@@ -618,17 +681,19 @@ window.SITE_DATA = {
    ]
   },
   {
-   "section": "Reference",
-   "name": "Plain-Language Glossary",
+   "section": "Reference & Primers",
+   "name": "Charter Sections",
    "images": [
-    "graphics/extras/glossary/master-glossary-1.png",
-    "graphics/extras/glossary/master-glossary-2.png",
-    "graphics/extras/glossary/master-glossary-3.png",
-    "graphics/extras/glossary/master-glossary-4.png",
-    "graphics/extras/glossary/master-glossary-5.png",
-    "graphics/extras/glossary/master-glossary-6.png",
-    "graphics/extras/glossary/master-glossary-7.png",
-    "graphics/extras/glossary/master-glossary-8.png"
+    "graphics/extras/charter-sections/charter-1-cover.png",
+    "graphics/extras/charter-sections/charter-2-what-it-is.png",
+    "graphics/extras/charter-sections/charter-3-s2-fundamental-freedoms.png",
+    "graphics/extras/charter-sections/charter-4-s3-6-voting-and-leaving.png",
+    "graphics/extras/charter-sections/charter-5-s7-10-legal-rights.png",
+    "graphics/extras/charter-sections/charter-6-s11-14-if-you-are-charged.png",
+    "graphics/extras/charter-sections/charter-7-s15-equality-and-more.png",
+    "graphics/extras/charter-sections/charter-8-s1-s33-not-absolute.png",
+    "graphics/extras/charter-sections/charter-9-seal-legend-1.png",
+    "graphics/extras/charter-sections/charter-10-seal-legend-2.png"
    ]
   }
  ],

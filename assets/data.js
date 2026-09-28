@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-09-22",
+ "generated": "2026-09-28",
  "bills": [
   {
    "bill": "C-22",
@@ -7,8 +7,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "A faster police route to your identity online",
    "topic_ref": "lawful access / subscriber information",
-   "status": "senate-1st",
-   "status_label": "House of Commons bill awaiting first reading in the Senate",
+   "status": "senate-2nd",
+   "status_label": "At second reading in the Senate",
    "lead": "This bill gives police a new, faster way to make phone and internet companies reveal who is behind an IP address, phone number, or account.",
    "points": [
     {
@@ -588,6 +588,15 @@ window.SITE_DATA = {
   }
  ],
  "extras": [
+  {
+   "section": "Weekly Roundups",
+   "name": "Roundup September 28 26",
+   "images": [
+    "graphics/extras/roundup-September-28-26/roundup-september-28-26-1-cover.png",
+    "graphics/extras/roundup-September-28-26/roundup-september-28-26-2-list.png",
+    "graphics/extras/roundup-September-28-26/roundup-september-28-26-3-closing.png"
+   ]
+  },
   {
    "section": "Weekly Roundups",
    "name": "Roundup June 22 26",
@@ -1369,6 +1378,14 @@ window.SITE_DATA = {
    "affiliation": "ISG",
    "email": "chantal.petitclerc@sen.parl.gc.ca",
    "url": "https://sencanada.ca/en/senators/petitclerc-chantal/"
+  },
+  {
+   "name": "Pitfield, Thomas",
+   "prov": "QC",
+   "province": "Quebec",
+   "affiliation": "",
+   "email": "thomas.pitfield@sen.parl.gc.ca",
+   "url": "https://sencanada.ca/en/senators/pitfield-thomas/"
   },
   {
    "name": "Saint-Germain, Raymonde",

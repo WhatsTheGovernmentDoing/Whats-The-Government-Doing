@@ -97,6 +97,11 @@ Captions and (going forward) the graphics' closing CTA point people here — per
 - The undefined-rules demand is one tight paragraph (items joined inline, lowercase, no
   nested em-dashes) ending in "A power whose limits are set later is not a limited power."
   Skip the `unclear` entry when the deferral is already a main point carrying the demand.
+- `asks` (optional, added 2026-10-07) — a list of plain sentences, each one a concrete
+  amendment, rendered as "Specifically, I am asking you to press for these amendments:"
+  just before the stage-aware ask. Without it a letter lists problems but never says what
+  to change. One ask per point worth fixing; name the fix, not the grievance. Traced to the
+  brief's verified text, never new claims. Omitted = the letter renders as before.
 - The lead and the register intro merge into ONE opening paragraph ("…the order exists.
   What is wrong with it is structural, not incidental:") — keep action.json `lead` to one
   sentence that doesn't repeat the points; the intro line does the framing.

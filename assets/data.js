@@ -174,7 +174,8 @@ window.SITE_DATA = {
     "Any power to compel a person to act should require a declared emergency, a time limit, a vote in Parliament and compensation for those compelled. These are the safeguards the Emergencies Act already requires.",
     "\"Emergency\" and \"economic security\" should be defined in the Act itself, not left to regulation.",
     "A penalty should be appealable to an independent tribunal or court, not reviewed only by the minister who imposed it.",
-    "When a person is excluded from a procurement, the minister should have to give them reasons."
+    "When a person is excluded from a procurement, the minister should have to give them reasons.",
+    "A demand for personal information should require a judge's approval, and anything obtained should be used only for the purpose stated in the notice."
    ],
    "credit": "The bill does draw some lines: every regulation under this power must be published in the Canada Gazette within 30 days and ten members can force a debate on revoking it (s. 34), a person cannot be both fined and prosecuted for the same act (s. 33.1(4)), and the order power reaches only the Minister's stockpiling acts. Publication is not scrutiny, and none of these requires a declared emergency, a vote, an end date or compensation.",
    "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-40",

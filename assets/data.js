@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-09-28",
+ "generated": "2026-10-07",
  "bills": [
   {
    "bill": "C-22",
@@ -131,6 +131,103 @@ window.SITE_DATA = {
     "graphics/C-39/C39-4-the-pattern.png",
     "graphics/C-39/C39-5-the-balance.png",
     "graphics/C-39/C39-6-weigh-in.png"
+   ]
+  },
+  {
+   "bill": "C-40",
+   "session": "45-1",
+   "register": "alarm",
+   "descriptor": "A minister can be authorized to order any person to act, with the limits set by regulation",
+   "topic_ref": "compelled stockpiling orders and defence procurement powers",
+   "status": "house-2nd",
+   "status_label": "At second reading in the House of Commons",
+   "lead": "Inside a bill about defence procurement and investment, C-40 turns a 1951 law that let the government ask industry for reports and hire it to act into one under which a minister can be authorized, by regulation, to order any person to act.",
+   "points": [
+    {
+     "text": "It lets Cabinet make regulations authorizing the Minister, \"for the purposes of national defence or national security or if faced with an emergency, to require that any person do anything, under the control and direction of the Minister\" that the Minister may do under the stockpiling power: acquire, store, maintain, transport or dispose of whatever Cabinet designates",
+     "cite": "s. 33(1)(b), s. 15",
+     "consequence": "The old Act let the government authorize or contract with people to act for it. This one lets it compel them, with no declared emergency, no end date, no compensation and no vote in Parliament, the safeguards the Emergencies Act requires for comparable powers."
+    },
+    {
+     "text": "It backs those regulations with administrative penalties of up to $2,000,000 per violation, where the only review the Act guarantees is a request for review by the Minister, or alternatively with a summary offence carrying up to 12 months in jail",
+     "cite": "ss. 33.1(2)–(3), 45(2)",
+     "consequence": "The official who directs the compelled act is the only reviewer the statute promises for the penalty that enforces it."
+    },
+    {
+     "text": "It widens what can be stockpiled from \"materials or substances\" held against shortages to \"anything\", including data, essential for national defence, \"national security, including economic security\", or the defence or security of an associated government or other state",
+     "cite": "ss. 2, 15(2)",
+     "consequence": "Economic security is an open-ended ground, so the reach of the order power grows with how broadly the government reads it."
+    },
+    {
+     "text": "It lets the Minister exclude any person from a government procurement on reasonable grounds to believe they pose a risk to national defence, national security or public safety, and states that the Minister is not required to give the reasons",
+     "cite": "s. 29(1)–(2)",
+     "consequence": "A decision that never has to be explained is very hard to challenge, even where judicial review remains available in principle."
+    }
+   ],
+   "unclear": [
+    {
+     "text": "what counts as an \"emergency\", which persons can be compelled and what they can be required to do are left to regulations not yet written, as is whether any independent appeal from a penalty will exist",
+     "cite": "ss. 33(1)(b), 33.1(1)(a)"
+    }
+   ],
+   "asks": [
+    "Any power to compel a person to act should require a declared emergency, a time limit, a vote in Parliament and compensation for those compelled. These are the safeguards the Emergencies Act already requires.",
+    "\"Emergency\" and \"economic security\" should be defined in the Act itself, not left to regulation.",
+    "A penalty should be appealable to an independent tribunal or court, not reviewed only by the minister who imposed it.",
+    "When a person is excluded from a procurement, the minister should have to give them reasons."
+   ],
+   "credit": "The bill does draw some lines: every regulation under this power must be published in the Canada Gazette within 30 days and ten members can force a debate on revoking it (s. 34), a person cannot be both fined and prosecuted for the same act (s. 33.1(4)), and the order power reaches only the Minister's stockpiling acts. Publication is not scrutiny, and none of these requires a declared emergency, a vote, an end date or compensation.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-40",
+   "graphics": [
+    "graphics/C-40/C40-1-name-vs-reality.png",
+    "graphics/C-40/C40-2-what-it-does.png",
+    "graphics/C-40/C40-3-means-for-you.png",
+    "graphics/C-40/C40-4-the-pattern.png",
+    "graphics/C-40/C40-5-the-balance.png",
+    "graphics/C-40/C40-6-weigh-in.png"
+   ]
+  },
+  {
+   "bill": "S-7",
+   "session": "45-1",
+   "register": "alarm",
+   "descriptor": "Marine-security information can be shared with any level of government, with no limits in the law",
+   "topic_ref": "marine-security information sharing and unpublished border-law exemptions",
+   "status": "senate-2nd",
+   "status_label": "At second reading in the Senate",
+   "lead": "Inside a bill presented as cutting red tape, S-7 lets Cabinet decide later, by regulation, which federal, provincial and municipal agencies can be given the information Canada's marine security system collects, with no limit in the law on why or what.",
+   "points": [
+    {
+     "text": "It lets Cabinet make regulations for disclosing any information collected under the Marine Transportation Security Act to federal, provincial or municipal departments and agencies, and the Act itself sets no purpose, category or threat limit on that sharing",
+     "cite": "MTSA s. 5.1 (bill cl. 151)",
+     "consequence": "Information gathered about crew, port workers and travellers for security can be put to other uses, and the real limits are set by Cabinet rather than written by Parliament."
+    },
+    {
+     "text": "Parliament enacted this same power in 2012 with three limits: federal recipients only, only to protect the safety or security of Canada or Canadians, and only about vessels believed to pose a threat. That version never came into force, and S-7 repeals it and drops all three limits",
+     "cite": "S.C. 2012, c. 17, s. 71; bill cl. 188(5)–(7)",
+     "consequence": "The safeguards Parliament once wrote into this power are removed rather than brought into force."
+    },
+    {
+     "text": "It lets the Public Safety Minister exempt any person or class of persons from provisions of border law, including the Immigration and Refugee Protection Act and the Customs Act, for up to five years, by an order that is not a statutory instrument and has no publication requirement",
+     "cite": "CBSA Act s. 6.1",
+     "consequence": "Parts of Acts of Parliament can be switched off for chosen groups by orders the public has no statutory right to see."
+    },
+    {
+     "text": "It lets one minister make marine-security rules with the force of regulation for up to two years without Cabinet, and issue 72-hour orders requiring any person to do or not do anything, with breaches punishable by up to five years in prison, outside the Statutory Instruments Act",
+     "cite": "MTSA ss. 6.1, 6.2, 17.4, 17.5",
+     "consequence": "Criminal-law-backed rules can be made without the Justice Department examination and parliamentary scrutiny that ordinary regulations receive."
+    }
+   ],
+   "unclear": [],
+   "credit": "The bill does draw some lines: the sharing rules must come through published Cabinet regulations and none exist yet, marine interim orders must be gazetted within 23 days and tabled in Parliament within 15, emergency directions expire after 72 hours, border exemptions are capped at five years and need the consent of any co-responsible minister, and the notwithstanding clause is not invoked. None of these puts a limit on what can be shared, or with whom, into the law itself.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/s-7",
+   "graphics": [
+    "graphics/S-7/S7-1-name-vs-reality.png",
+    "graphics/S-7/S7-2-what-it-does.png",
+    "graphics/S-7/S7-3-means-for-you.png",
+    "graphics/S-7/S7-4-the-pattern.png",
+    "graphics/S-7/S7-5-the-balance.png",
+    "graphics/S-7/S7-6-weigh-in.png"
    ]
   },
   {

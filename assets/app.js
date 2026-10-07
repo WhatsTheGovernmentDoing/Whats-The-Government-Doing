@@ -348,6 +348,16 @@
     const unclear = unclearParagraph(b);
     if (unclear) parts.push("", unclear);
 
+    // optional bill-specific amendments, so the letter names WHAT to change
+    // before the stage-aware ask tells the reader's MP WHEN to press for it
+    if (b.asks && b.asks.length) {
+      parts.push(
+        "",
+        "Specifically, I am asking you to press for these amendments:",
+        b.asks.map((a) => `- ${a}`).join("\n")
+      );
+    }
+
     parts.push("", oppose ? OPPOSE_ASK[stageKey(b)] : STAGE_ASK[stageKey(b)][b.register]);
     parts.push("", CLOSING[b.register]);
     parts.push("", "Sincerely,", "[Your name]", "[Your address and postal code]");

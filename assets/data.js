@@ -185,7 +185,8 @@ window.SITE_DATA = {
     "graphics/C-40/C40-3-means-for-you.png",
     "graphics/C-40/C40-4-the-pattern.png",
     "graphics/C-40/C40-5-the-balance.png",
-    "graphics/C-40/C40-6-weigh-in.png"
+    "graphics/C-40/C40-6-weigh-in.png",
+    "graphics/C-40/C40-7-key-terms.png"
    ]
   },
   {

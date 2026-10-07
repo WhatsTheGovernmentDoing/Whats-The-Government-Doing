@@ -102,6 +102,9 @@ Captions and (going forward) the graphics' closing CTA point people here — per
   just before the stage-aware ask. Without it a letter lists problems but never says what
   to change. One ask per point worth fixing; name the fix, not the grievance. Traced to the
   brief's verified text, never new claims. Omitted = the letter renders as before.
+- **Length (2026-10-07):** letters must be short enough to be read. Drafted content (lead +
+  points + credit + unclear + asks) targets ≤ 250 words; 3 points, one `unclear` at most.
+  Word budgets per field live in the `bills_pipeline` skill, Step 6.5.
 - The lead and the register intro merge into ONE opening paragraph ("…the order exists.
   What is wrong with it is structural, not incidental:") — keep action.json `lead` to one
   sentence that doesn't repeat the points; the intro line does the framing.

@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-07",
+ "generated": "2026-10-09",
  "bills": [
   {
    "bill": "C-22",
@@ -91,8 +91,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "Transport security clearances cancelled with no reason required",
    "topic_ref": "transportation security clearances and trade-data sharing",
-   "status": "house-2nd",
-   "status_label": "At second reading in the House of Commons",
+   "status": "house-committee",
+   "status_label": "At consideration in committee in the House of Commons",
    "lead": "Inside a bill about pipelines, ports and permits, C-39 lets the Minister of Transport cancel any person's transportation security clearance, and with it their job, without anything in the Act requiring that they be told why or be able to challenge the decision.",
    "points": [
     {

@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-09",
+ "generated": "2026-10-10",
  "bills": [
   {
    "bill": "C-22",
@@ -187,6 +187,54 @@ window.SITE_DATA = {
     "graphics/C-40/C40-5-the-balance.png",
     "graphics/C-40/C40-6-weigh-in.png",
     "graphics/C-40/C40-7-key-terms.png"
+   ]
+  },
+  {
+   "bill": "C-219",
+   "session": "45-1",
+   "register": "alarm",
+   "descriptor": "Frozen private property must, outside ongoing litigation, go to a forfeiture application within 24 months, with no conviction required",
+   "topic_ref": "mandatory forfeiture of sanctioned property and a lower sanctions trigger",
+   "status": "senate-1st",
+   "status_label": "House of Commons bill awaiting first reading in the Senate",
+   "lead": "Inside a bill about international sanctions, C-219 makes seeking forfeiture of frozen private property a required step, on a deadline, with no criminal conviction needed.",
+   "points": [
+    {
+     "text": "Within 24 months of seizing or restraining private property under a sanctions order, the Minister must apply for its forfeiture, unless legal proceedings are ongoing",
+     "cite": "Magnitsky Act s. 4.5(1), (3); SEMA s. 5.7(1), (3) (cls. 5, 12)",
+     "consequence": "Seeking forfeiture was a choice; now it is required."
+    },
+    {
+     "text": "Forfeited private property must be disposed of within 30 days, the same period a third party has to claim an interest in it",
+     "cite": "ss. 4.5(2), 5.7(2); ss. 4.2(4), 5.4(4)"
+    },
+    {
+     "text": "Cabinet can now freeze on its opinion that international peace, security or stability \"has been undermined or is likely to be undermined\", replacing the economic-sanctions law's \"grave breach\" test",
+     "cite": "SEMA s. 4(1.1)(b) (cl. 11(1.1)); Magnitsky Act s. 4(2)(f) (cl. 4(2))",
+     "consequence": "\"Stability\" is undefined, so Cabinet's reading sets where the forfeiture track starts."
+    }
+   ],
+   "unclear": [
+    {
+     "text": "\"private property\" and \"legal proceedings\" are not defined, so the reach of the deadline and its exception is left open",
+     "cite": "Magnitsky Act s. 4.5; SEMA s. 5.7"
+    }
+   ],
+   "asks": [
+    "Keep forfeiture a decision the Minister must justify case by case, not a mandatory step triggered by the passage of 24 months.",
+    "Require the judge to be satisfied the owner is connected to the conduct behind the sanction, not just that they own or control the property.",
+    "Hold forfeited property until the third-party claim period has closed and filed claims are decided, rather than disposing of it within 30 days."
+   ],
+   "credit": "The bill does draw lines — a judge makes each forfeiture order after notice, the deadline does not apply while legal proceedings are ongoing, seizure orders are tabled — but none asks why the property was frozen.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-219",
+   "graphics": [
+    "graphics/C-219/C219-1-name-vs-reality.png",
+    "graphics/C-219/C219-2-what-it-does.png",
+    "graphics/C-219/C219-3-means-for-you.png",
+    "graphics/C-219/C219-4-the-pattern.png",
+    "graphics/C-219/C219-5-the-balance.png",
+    "graphics/C-219/C219-6-weigh-in.png",
+    "graphics/C-219/C219-7-key-terms.png"
    ]
   },
   {
@@ -698,6 +746,18 @@ window.SITE_DATA = {
   },
   {
    "section": "Weekly Roundups",
+   "name": "Roundup October 9 26",
+   "images": [
+    "graphics/extras/roundup-October-9-26/roundup-october-9-26-1-cover.png",
+    "graphics/extras/roundup-October-9-26/roundup-october-9-26-2-list.png",
+    "graphics/extras/roundup-October-9-26/roundup-october-9-26-3-c219.png",
+    "graphics/extras/roundup-October-9-26/roundup-october-9-26-4-c219.png",
+    "graphics/extras/roundup-October-9-26/roundup-october-9-26-5-c219.png",
+    "graphics/extras/roundup-October-9-26/roundup-october-9-26-6-closing.png"
+   ]
+  },
+  {
+   "section": "Weekly Roundups",
    "name": "Roundup June 22 26",
    "images": [
     "graphics/extras/roundup-June-22-26/roundup-june-22-26-1-cover.png",
@@ -717,6 +777,15 @@ window.SITE_DATA = {
     "graphics/extras/roundup-June-15-26/roundup-june-15-26-5-list.png",
     "graphics/extras/roundup-June-15-26/roundup-june-15-26-6-list.png",
     "graphics/extras/roundup-June-15-26/roundup-june-15-26-7-closing.png"
+   ]
+  },
+  {
+   "section": "Progress Updates",
+   "name": "Progress October 9 26",
+   "images": [
+    "graphics/extras/progress-October-9-26/progress-october-9-26-1-cover.png",
+    "graphics/extras/progress-October-9-26/progress-october-9-26-2-list.png",
+    "graphics/extras/progress-October-9-26/progress-october-9-26-3-closing.png"
    ]
   },
   {

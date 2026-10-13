@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-10",
+ "generated": "2026-10-13",
  "bills": [
   {
    "bill": "C-22",
@@ -1511,7 +1511,7 @@ window.SITE_DATA = {
    "name": "Martel, Richard",
    "prov": "QC",
    "province": "Quebec",
-   "affiliation": "",
+   "affiliation": "C",
    "email": "richard.martel@sen.parl.gc.ca",
    "url": "https://sencanada.ca/en/senators/martel-richard/"
   },
@@ -1554,14 +1554,6 @@ window.SITE_DATA = {
    "affiliation": "",
    "email": "thomas.pitfield@sen.parl.gc.ca",
    "url": "https://sencanada.ca/en/senators/pitfield-thomas/"
-  },
-  {
-   "name": "Saint-Germain, Raymonde",
-   "prov": "QC",
-   "province": "Quebec",
-   "affiliation": "ISG",
-   "email": "raymonde.saint-germain@sen.parl.gc.ca",
-   "url": "https://sencanada.ca/en/senators/saint-germain-raymonde/"
   },
   {
    "name": "Verner, Josée",

@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-13",
+ "generated": "2026-10-20",
  "bills": [
   {
    "bill": "C-22",
@@ -195,8 +195,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "Frozen private property must, outside ongoing litigation, go to a forfeiture application within 24 months, with no conviction required",
    "topic_ref": "mandatory forfeiture of sanctioned property and a lower sanctions trigger",
-   "status": "senate-1st",
-   "status_label": "House of Commons bill awaiting first reading in the Senate",
+   "status": "senate-2nd",
+   "status_label": "At second reading in the Senate",
    "lead": "Inside a bill about international sanctions, C-219 makes seeking forfeiture of frozen private property a required step, on a deadline, with no criminal conviction needed.",
    "points": [
     {

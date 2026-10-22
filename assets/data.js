@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-20",
+ "generated": "2026-10-22",
  "bills": [
   {
    "bill": "C-22",
@@ -7,8 +7,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "A faster police route to your identity online",
    "topic_ref": "lawful access / subscriber information",
-   "status": "senate-2nd",
-   "status_label": "At second reading in the Senate",
+   "status": "senate-committee",
+   "status_label": "At consideration in committee in the Senate",
    "lead": "This bill gives police a new, faster way to make phone and internet companies reveal who is behind an IP address, phone number, or account.",
    "points": [
     {

@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-22",
+ "generated": "2026-10-23",
  "bills": [
   {
    "bill": "C-22",
@@ -416,6 +416,56 @@ window.SITE_DATA = {
    ]
   },
   {
+   "bill": "S-252",
+   "session": "45-1",
+   "register": "concern",
+   "descriptor": "Criminal age-and-consent checks for commercial porn, plus a takedown duty with no process",
+   "topic_ref": "age-and-consent verification and takedown duties for pornographic material",
+   "status": "senate-2nd",
+   "status_label": "At second reading in the Senate",
+   "lead": "S-252 makes commercial porn producers and platforms criminally responsible for confirming age and consent, and every website answerable to takedown requests.",
+   "points": [
+    {
+     "text": "Any website operator who knowingly ignores a written removal request from the maker or a person depicted commits an offence, with no deadline, requester check or dispute route",
+     "cite": "s. 172.12(3)",
+     "consequence": "Prison for keeping content, nothing for removing it: operators have every reason to over-remove."
+    },
+    {
+     "text": "A maker claiming they believed a performer was 18 must prove they checked and documented government photo ID or a prescribed document",
+     "cite": "s. 172.12(7)",
+     "consequence": "That is a burden of proof on the accused, in a 10-year offence."
+    },
+    {
+     "text": "Commercial sites must remove content posted before the law if they \"reasonably ought to know\" age and consent confirmation was never obtained, absent a reasonable excuse",
+     "cite": "s. 172.12(4)",
+     "consequence": "An operator can face 10 years without actually knowing."
+    }
+   ],
+   "unclear": [
+    {
+     "text": "the accepted ID documents, the records platforms must keep and for how long, and the takedown request process are all left to regulations",
+     "cite": "s. 172.14"
+    }
+   ],
+   "asks": [
+    "A removal request should have a deadline, a check on who is asking, and a dispute route.",
+    "The accused should only need to raise an ID check, leaving the Crown to disprove it.",
+    "Liability for older content should require actual knowledge, not what an operator \"reasonably ought to know.\"",
+    "Records of performers' ID should have a retention limit and a security duty in the Act."
+   ],
+   "credit": "Seizure and deletion stay with a judge, reach abroad covers only acts against minors, and a public-good defence applies (ss. 164.1, 7(4.1), 172.12(10)), yet the provisions above remain.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/s-252",
+   "graphics": [
+    "graphics/S-252/S252-1-the-story.png",
+    "graphics/S-252/S252-2-what-it-does.png",
+    "graphics/S-252/S252-3-open-question.png",
+    "graphics/S-252/S252-4-the-debate.png",
+    "graphics/S-252/S252-5-does-not-do.png",
+    "graphics/S-252/S252-6-what-to-watch.png",
+    "graphics/S-252/S252-7-key-terms.png"
+   ]
+  },
+  {
    "bill": "C-9",
    "session": "45-1",
    "register": "concern",
@@ -758,6 +808,16 @@ window.SITE_DATA = {
   },
   {
    "section": "Weekly Roundups",
+   "name": "Roundup October 23 26",
+   "images": [
+    "graphics/extras/roundup-October-23-26/roundup-october-23-26-1-cover.png",
+    "graphics/extras/roundup-October-23-26/roundup-october-23-26-2-list.png",
+    "graphics/extras/roundup-October-23-26/roundup-october-23-26-3-list.png",
+    "graphics/extras/roundup-October-23-26/roundup-october-23-26-4-closing.png"
+   ]
+  },
+  {
+   "section": "Weekly Roundups",
    "name": "Roundup June 22 26",
    "images": [
     "graphics/extras/roundup-June-22-26/roundup-june-22-26-1-cover.png",
@@ -786,6 +846,15 @@ window.SITE_DATA = {
     "graphics/extras/progress-October-9-26/progress-october-9-26-1-cover.png",
     "graphics/extras/progress-October-9-26/progress-october-9-26-2-list.png",
     "graphics/extras/progress-October-9-26/progress-october-9-26-3-closing.png"
+   ]
+  },
+  {
+   "section": "Progress Updates",
+   "name": "Progress October 23 26",
+   "images": [
+    "graphics/extras/progress-October-23-26/progress-october-23-26-1-cover.png",
+    "graphics/extras/progress-October-23-26/progress-october-23-26-2-list.png",
+    "graphics/extras/progress-October-23-26/progress-october-23-26-3-closing.png"
    ]
   },
   {

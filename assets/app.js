@@ -58,7 +58,7 @@
       alarm:
         "This bill has just been introduced in the House. I am asking you to put your position on the provisions above on the record before debate begins — the earliest objection is the hardest to ignore.",
       concern:
-        "This bill has just been introduced in the House. I am asking you to put these questions to the government before debate begins, so they are on the record from the start.",
+        "This bill has just been introduced in the House. I am asking you to raise these concerns before debate begins, so they are on the record from the start.",
       explain:
         "This bill has just been introduced in the House. I am asking you to seek these answers before debate begins, so the House starts from what the bill actually delegates.",
     },
@@ -66,7 +66,7 @@
       alarm:
         "The House is debating this bill now and will vote on whether to advance it. Before that vote, I am asking you to state your position on the provisions above and press for their amendment. If the government intends to keep them, it owes the public a justification on the record.",
       concern:
-        "The House is debating this bill now. Before the second-reading vote, I am asking you to put these questions to the government — and to press for answers, and amendments where warranted, when the bill reaches committee.",
+        "The House is debating this bill now. I am asking you to raise these concerns before the second-reading vote.",
       explain:
         "The House is debating this bill now. Before the second-reading vote, I am asking you to seek these answers and place them on the record, so Parliament votes knowing what it is delegating.",
     },
@@ -74,7 +74,7 @@
       alarm:
         "This bill is at committee — the stage where the text can actually change. I am asking you to press for the provisions above to be amended, and to support the witnesses and written briefs raising them. If the government intends to keep them, it owes the public a justification on the record.",
       concern:
-        "This bill is at committee — the stage where the text can actually change. I am asking you to make sure these questions are put to witnesses and to the government, and answered before the bill returns to the House.",
+        "This bill is at committee — the stage where the text can actually change. I am asking you to make sure these concerns are put to witnesses and to the bill's sponsor there.",
       explain:
         "This bill is at committee — the stage where the text can actually change. I am asking you to have these answers put on the committee record before the bill returns to the House.",
     },
@@ -82,7 +82,7 @@
       alarm:
         "The House is weighing the committee's amendments and can still make more. I am asking you to press for the provisions above to be amended while the text is in play. If the government intends to keep them, it owes the public a justification on the record.",
       concern:
-        "The House is weighing the committee's amendments and can still make more. I am asking you to press for these questions to be answered — and the text amended where warranted — while it is still in play.",
+        "The House is weighing the committee's amendments and can still make more. I am asking you to raise these concerns while the text is still in play.",
       explain:
         "The House is weighing the committee's amendments and can still make more. I am asking you to have these answers placed on the record while the text is still in play.",
     },
@@ -90,7 +90,7 @@
       alarm:
         "This bill is at third reading — the final House debate and vote. Before the House gives its last word, I am asking you to state your position on the provisions above. If the government intends to keep them, it owes the public a justification on the record.",
       concern:
-        "This bill is at third reading — the final House debate and vote. I am asking you to put these questions on the record before the House gives its last word.",
+        "This bill is at third reading — the final House debate and vote. I am asking you to raise these concerns before the House gives its last word.",
       explain:
         "This bill is at third reading — the final House debate and vote. I am asking you to have these answers placed on the record before the House gives its last word.",
     },
@@ -98,7 +98,7 @@
       alarm:
         "I am asking you to press for these provisions to be amended at committee. The Senate is the last chamber that can. If the government intends to keep them, it owes the public a justification on the record.",
       concern:
-        "This bill is now before the Senate. I am asking you to press for these questions to be answered — and the text amended where warranted — before the Senate lets it pass.",
+        "This bill is now before the Senate. I am asking you to raise these concerns before the Senate lets it pass.",
       explain:
         "This bill is now before the Senate. I am asking you to have these answers placed on the record before the Senate lets it pass.",
     },
@@ -106,7 +106,7 @@
       alarm:
         "The Senate is debating this bill's principle and will vote. Before that vote, I am asking you to state your position on the provisions above and press for their amendment at committee — the Senate is the last chamber that can.",
       concern:
-        "The Senate is debating this bill now. Before the second-reading vote, I am asking you to press for these questions to be answered — and the text amended where warranted — before the Senate lets it pass.",
+        "The Senate is debating this bill's principle and will vote. I am asking you to raise these concerns with the bill's sponsor before that vote.",
       explain:
         "The Senate is debating this bill now. I am asking you to have these answers placed on the record before the vote.",
     },
@@ -114,7 +114,7 @@
       alarm:
         "This bill is at Senate committee — the last place its text can realistically change. I am asking you to press for the provisions above to be amended, and to support the witnesses and written briefs raising them.",
       concern:
-        "This bill is at Senate committee — the last place its text can realistically change. I am asking you to make sure these questions are put to witnesses and answered before the bill moves on.",
+        "This bill is at Senate committee — the last place its text can realistically change. I am asking you to make sure these concerns are put to witnesses and to the bill's sponsor there.",
       explain:
         "This bill is at Senate committee — the last place its text can realistically change. I am asking you to have these answers put on the committee record.",
     },
@@ -122,7 +122,7 @@
       alarm:
         "The Senate is weighing amendments and can still make more. I am asking you to press for the provisions above to be amended while the text is in play — the Senate is the last chamber that can.",
       concern:
-        "The Senate is weighing amendments and can still make more. I am asking you to press for these questions to be answered while the text is still in play.",
+        "The Senate is weighing amendments and can still make more. I am asking you to raise these concerns while the text is still in play.",
       explain:
         "The Senate is weighing amendments and can still make more. I am asking you to have these answers placed on the record while the text is still in play.",
     },
@@ -130,7 +130,7 @@
       alarm:
         "This bill is at third reading in the Senate — the last vote it will ever face. Before it, I am asking you to state your position on the provisions above. If the government intends to keep them, it owes the public a justification on the record.",
       concern:
-        "This bill is at third reading in the Senate — the last vote it will ever face. I am asking you to put these questions on the record before it.",
+        "This bill is at third reading in the Senate — the last vote it will ever face. I am asking you to raise these concerns before it.",
       explain:
         "This bill is at third reading in the Senate — the last vote it will ever face. I am asking you to have these answers placed on the record before it.",
     },
@@ -138,7 +138,7 @@
       alarm:
         "This bill has passed both chambers and can no longer be voted down. The decisions that remain move to the regulations. I am asking you to scrutinize them as they appear in the Canada Gazette, to press for an early amending bill addressing the provisions above, and to demand a public accounting for how these powers will be used.",
       concern:
-        "This bill has passed both chambers and can no longer be voted down. I am asking you to press for these questions to be answered as the regulations are drafted in the Canada Gazette — before the powers are used.",
+        "This bill has passed both chambers. I am asking you to raise these concerns as its regulations are drafted in the Canada Gazette.",
       explain:
         "This bill has passed both chambers. I am asking you to obtain these answers as the regulations are drafted in the Canada Gazette, and to make them public.",
     },
@@ -146,7 +146,7 @@
       alarm:
         "This act is now law; that ends the votes, not the accountability. I am asking you to press for an amending bill addressing the provisions above, to scrutinize the regulations as they appear in the Canada Gazette, and to demand a public accounting for how these powers are used.",
       concern:
-        "This act is now law. I am asking you to watch how it is used — the first cases will show whether the concerns above were warranted — and to press publicly for correction if they are borne out.",
+        "This act is now law. I am asking you to raise these concerns as it is put into use and its regulations are made.",
       explain:
         "This act is now law. I am asking you to obtain these answers from the government and make them public, and to scrutinize the regulations as they are made in the Canada Gazette.",
     },
@@ -188,15 +188,69 @@
   };
 
   // one warm closing register for MPs and senators alike — the force lives in
-  // the asks, not the sign-off
+  // the asks, not the sign-off. Concern has none: its reply request is the
+  // ask itself (concernAsk below).
   const CLOSING = {
     alarm:
       "I would be grateful for a written reply setting out your position on these provisions and what you intend to do about them.",
-    concern:
-      "I would be grateful for a written reply setting out your position on these concerns and how you will pursue them.",
     explain:
       "I would be grateful for a written reply with these answers, or a clear account of how and when they will be provided.",
   };
+
+  // What a concern letter asks to hear back (Alex, 2026-10-25): not "change
+  // it" by default — explain it, fix it, address it in the statement, or say
+  // how the protections at stake will be upheld. action.json `ask_ways` picks
+  // which apply to a bill; "statement" only fits a government bill whose
+  // Charter Statement can still speak to it.
+  const CONCERN_WAYS = {
+    explain: (b, unclear) =>
+      unclear
+        ? "whether these provisions, and the rules left to regulation, can be explained more clearly on the record"
+        : "whether these provisions can be explained more clearly on the record",
+    fix: (b) =>
+      b.status === "law"
+        ? "whether you will press for an amending bill where they fall short"
+        : "whether you will press for them to be fixed where they fall short",
+    statement: () => "whether the government will address them in its Charter Statement",
+    plan: () => "what you plan to do so the protections at stake are actually upheld",
+  };
+  const CONCERN_WAYS_DEFAULT = ["explain", "fix", "plan"];
+
+  function joinAnd(items) {
+    if (items.length < 2) return items.join("");
+    return `${items.slice(0, -1).join(", ")}, and ${items[items.length - 1]}`;
+  }
+
+  function concernAsk(b, unclear) {
+    const ways = (b.ask_ways && b.ask_ways.length ? b.ask_ways : CONCERN_WAYS_DEFAULT)
+      .filter((w) => CONCERN_WAYS[w] && !(w === "statement" && b.status === "law"))
+      .map((w) => CONCERN_WAYS[w](b, unclear));
+    return (
+      STAGE_ASK[stageKey(b)].concern +
+      (ways.length ? ` I would be grateful for a written reply telling me ${joinAnd(ways)}.` : "")
+    );
+  }
+
+  /* ---------------- the issues a letter raises ----------------
+     Every point and every "left to regulation" item is one issue. All start
+     ticked; the visitor can drop any (never all) and the letter rebuilds.
+     `short` is the concise line written for this; older files without it
+     fall back to the full text. */
+
+  let picked = []; // picked[i] === false means issue i was unticked
+
+  function issuesOf(b) {
+    const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+    return b.points
+      .map((p) => ({ short: p.short || p.text, cite: p.cite, unclear: false }))
+      .concat(
+        (b.unclear || []).map((u) => ({ short: u.short || cap(u.text), cite: u.cite, unclear: true }))
+      );
+  }
+
+  function pickedIssues(b) {
+    return issuesOf(b).filter((_, i) => picked[i] !== false);
+  }
 
   function inSenate(b) {
     return b.status === "senate" || b.status.startsWith("senate-");
@@ -282,17 +336,16 @@
     return inSenate(b) ? "senate-2nd" : "house-2nd";
   }
 
+  // Alarm only: the rules a bill leaves to regulation are named in the issue
+  // list, and this line makes the demand. Concern asks it through
+  // CONCERN_WAYS.explain; explain's own stage ask is already about answers.
   function unclearParagraph(b) {
-    if (!b.unclear || !b.unclear.length) return "";
-    const items = b.unclear
-      .map((u) => `${u.text} (${u.cite})`)
-      .join("; ");
     const when =
       b.status === "law"
         ? "publicly, as the regulations are made — before those powers are used"
         : "before Parliament is asked to approve them";
     return (
-      `And where this bill leaves the rules undefined — ${items} — I am asking that they be explained and addressed ${when}. ` +
+      `Where this bill leaves the rules to be set later, I am asking that they be explained and addressed ${when}. ` +
       `A power whose limits are set later is not a limited power.`
     );
   }
@@ -319,10 +372,12 @@
         : `I am one of your constituents in [your riding], writing about Bill ${b.bill}.`;
     }
 
-    // claim -> cite -> consequence: each point is its own short paragraph
-    const points = b.points
-      .map((p) => `${p.text}. (${p.cite})` + (p.consequence ? ` ${p.consequence}` : ""))
-      .join("\n\n");
+    // one concise line per issue the visitor kept (changed 2026-10-25: the
+    // per-point consequence paragraphs and the `asks` amendment list are no
+    // longer rendered; one ask at the end carries the request)
+    const issues = pickedIssues(b);
+    const anyUnclear = issues.some((x) => x.unclear);
+    const bullets = issues.map((x) => `- ${x.short} (${x.cite})`).join("\n");
 
     const intro = oppose
       ? isLaw
@@ -336,30 +391,24 @@
       greeting,
       "",
       constituent,
-      "",
-      `${b.lead} ${intro}`,
-      "",
-      points,
     ];
+
+    // optional, per bill: said only where the analysis found the aim sound
+    if (b.common_ground) parts.push("", b.common_ground);
+
+    parts.push("", `${b.lead} ${intro}`, "", bullets);
 
     // credit-as-pivot: each bill's credit ends by turning back to the provisions
     if (b.credit) parts.push("", b.credit);
 
-    const unclear = unclearParagraph(b);
-    if (unclear) parts.push("", unclear);
+    if (b.register === "alarm" && anyUnclear) parts.push("", unclearParagraph(b));
 
-    // optional bill-specific amendments, so the letter names WHAT to change
-    // before the stage-aware ask tells the reader's MP WHEN to press for it
-    if (b.asks && b.asks.length) {
-      parts.push(
-        "",
-        "Specifically, I am asking you to press for these amendments:",
-        b.asks.map((a) => `- ${a}`).join("\n")
-      );
+    if (b.register === "concern") {
+      parts.push("", concernAsk(b, anyUnclear));
+    } else {
+      parts.push("", oppose ? OPPOSE_ASK[stageKey(b)] : STAGE_ASK[stageKey(b)][b.register]);
+      parts.push("", CLOSING[b.register]);
     }
-
-    parts.push("", oppose ? OPPOSE_ASK[stageKey(b)] : STAGE_ASK[stageKey(b)][b.register]);
-    parts.push("", CLOSING[b.register]);
     parts.push("", "Sincerely,", "[Your name]", "[Your address and postal code]");
 
     return parts.join("\n");
@@ -479,11 +528,57 @@
       ? "Find a senator from your province"
       : "Find your MP";
 
+    renderIssues(b);
     $("letter").value = buildLetter(b);
     updateSendState();
 
     history.replaceState(null, "", `?bill=${encodeURIComponent(b.bill)}`);
     document.title = `Bill ${b.bill} — Take Action — What Is the Government Doing`;
+  }
+
+  // The checklist above the letter. Pages without the #issues box (the
+  // archived index-classic.html) simply get every issue.
+  function renderIssues(b) {
+    const items = issuesOf(b);
+    picked = items.map(() => true);
+    const list = $("issues-list");
+    if (!list) return;
+    list.innerHTML = "";
+    items.forEach((x, i) => {
+      const li = document.createElement("li");
+      const label = document.createElement("label");
+      const box = document.createElement("input");
+      box.type = "checkbox";
+      box.checked = true;
+      box.addEventListener("change", () => toggleIssue(i, box));
+      const text = document.createElement("span");
+      text.className = "issue-text";
+      text.textContent = x.short;
+      const cite = document.createElement("span");
+      cite.className = "issue-cite";
+      cite.textContent = x.cite;
+      label.append(box, text, cite);
+      li.appendChild(label);
+      list.appendChild(li);
+    });
+    $("issues").classList.toggle("hidden", items.length < 2);
+    syncLastBox();
+  }
+
+  function toggleIssue(i, box) {
+    picked[i] = box.checked;
+    syncLastBox();
+    if (current) $("letter").value = buildLetter(current);
+  }
+
+  // a letter has to raise something: the last ticked box can't be cleared
+  function syncLastBox() {
+    const boxes = Array.from(document.querySelectorAll("#issues-list input"));
+    const on = boxes.filter((x) => x.checked);
+    boxes.forEach((x) => {
+      x.disabled = on.length === 1 && x.checked;
+      x.closest("li").classList.toggle("off", !x.checked);
+    });
   }
 
   function selectedBill(value) {

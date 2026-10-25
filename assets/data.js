@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-23",
+ "generated": "2026-10-25",
  "bills": [
   {
    "bill": "C-22",
@@ -14,22 +14,26 @@ window.SITE_DATA = {
     {
      "text": "It lowers the bar for unmasking Canadians online to the weakest standard in criminal law",
      "cite": "s. 487.0142(2)",
-     "consequence": "To learn who is behind an IP address or account, police will need only reasonable grounds to suspect, not believe — for the exact information the Supreme Court held attracts a reasonable expectation of privacy in R v Spencer (2014) and R v Bykovets (2024). Committee did not touch it."
+     "consequence": "To learn who is behind an IP address or account, police will need only reasonable grounds to suspect, not believe — for the exact information the Supreme Court held attracts a reasonable expectation of privacy in R v Spencer (2014) and R v Bykovets (2024). Committee did not touch it.",
+     "short": "Police can unmask an online account on mere \"reasonable grounds to suspect\""
     },
     {
      "text": "In exigent circumstances, it allows that identity data to be obtained with no warrant at all",
      "cite": "exigent-access provisions",
-     "consequence": "Urgency replaces the judge entirely."
+     "consequence": "Urgency replaces the judge entirely.",
+     "short": "In urgent cases, that identity data can be obtained with no warrant at all"
     },
     {
      "text": "It lets police and CSIS compel providers to confirm a subscriber before any judge is involved",
      "cite": "s. 487.0195(2)",
-     "consequence": "Providers who volunteer information receive criminal and civil immunity. The judicial check here is not weakened; it is absent."
+     "consequence": "Providers who volunteer information receive criminal and civil immunity. The judicial check here is not weakened; it is absent.",
+     "short": "Police and CSIS can make providers confirm a subscriber before any judge is involved"
     },
     {
      "text": "It allows Cabinet to require up to a year of metadata retention, scoped entirely by later regulation",
      "cite": "s. 5(2)(d)",
-     "consequence": "A power whose limits are set after Parliament votes is not a limited power — and it falls on people who have never been suspected of anything. Its scope must be explained and addressed before this passes."
+     "consequence": "A power whose limits are set after Parliament votes is not a limited power — and it falls on people who have never been suspected of anything. Its scope must be explained and addressed before this passes.",
+     "short": "Cabinet can require up to a year of metadata retention, scoped by later regulation"
     }
    ],
    "unclear": [],
@@ -56,21 +60,25 @@ window.SITE_DATA = {
     {
      "text": "It lets the new agency receive, keep, and use fingerprints and photographs that people gave Canada under immigration law",
      "cite": "s. 39",
-     "consequence": "Biometrics collected for one purpose become searchable for another. That is the definition of function creep."
+     "consequence": "Biometrics collected for one purpose become searchable for another. That is the definition of function creep.",
+     "short": "The new agency can use fingerprints and photos people gave Canada under immigration law"
     },
     {
      "text": "Every rule governing that access — how long the data is kept, which investigations qualify, who may run a search, whether anyone is ever notified — is deferred to Cabinet regulation",
      "cite": "s. 25(1)(c)",
-     "consequence": "Parliament is being asked to authorize the channel now and trust that the rules come later. That order is backwards: the rules must be written, explained, and put before the committee before this advances."
+     "consequence": "Parliament is being asked to authorize the channel now and trust that the rules come later. That order is backwards: the rules must be written, explained, and put before the committee before this advances.",
+     "short": "Every rule on that access, from retention to notice, is left to Cabinet regulation"
     },
     {
      "text": "It can open an investigation at the request of a foreign law-enforcement body, with no duty to consult Canadian agencies first",
-     "cite": "s. 16(2)(b)"
+     "cite": "s. 16(2)(b)",
+     "short": "It can open an investigation at a foreign agency's request, without consulting Canadian agencies"
     },
     {
      "text": "The government's own Charter Statement is silent on the section 8 search-and-seizure implications of all of the above",
      "cite": "Charter Statement",
-     "consequence": "Silence on the exact Charter section engaged is itself a finding."
+     "consequence": "Silence on the exact Charter section engaged is itself a finding.",
+     "short": "The government's Charter Statement is silent on section 8 search and seizure"
     }
    ],
    "unclear": [],
@@ -98,28 +106,33 @@ window.SITE_DATA = {
     {
      "text": "It lets the Minister grant, suspend or cancel any individual's security clearance, and sets no notice, no reasons, no chance to respond and no appeal in the Act; the grounds and process are left entirely to regulations",
      "cite": "ss. 54.1(1), 54.4(c)",
-     "consequence": "A decision that never has to give a reason cannot be meaningfully checked, by the person affected, by a court, or by Parliament. That is where error and abuse go unnoticed."
+     "consequence": "A decision that never has to give a reason cannot be meaningfully checked, by the person affected, by a court, or by Parliament. That is where error and abuse go unnoticed.",
+     "short": "The Minister can cancel anyone's clearance with no notice, reasons, response or appeal in the Act"
     },
     {
      "text": "It lets Cabinet add new reasons for cancelling a clearance \"for any purpose specified by order of the Governor in Council\", by orders exempt from the Statutory Instruments Act",
      "cite": "s. 54.1(2)–(3)",
-     "consequence": "The grounds for losing a clearance can widen without the publication and scrutiny that ordinary regulations get."
+     "consequence": "The grounds for losing a clearance can widen without the publication and scrutiny that ordinary regulations get.",
+     "short": "Cabinet can add new grounds for cancelling a clearance, by orders exempt from normal scrutiny"
     },
     {
      "text": "It lets CSIS, the RCMP, CBSA and Immigration collect from and disclose to one another to run the system, and lets the Minister share clearance information with foreign governments",
      "cite": "ss. 54.2, 54.3",
-     "consequence": "The file behind an unexplained decision is built from intelligence, police, border and immigration records, and can travel beyond Canada."
+     "consequence": "The file behind an unexplained decision is built from intelligence, police, border and immigration records, and can travel beyond Canada.",
+     "short": "CSIS, the RCMP, CBSA and Immigration can pool records, and the Minister can share them abroad"
     },
     {
      "text": "It lets import and export information that a person gave the government move between federal departments despite the confidentiality protections of the Income Tax Act and the Customs Act, and lets Cabinet add more laws to that override by order",
      "cite": "Enabling Digital Trade Act s. 26",
-     "consequence": "Information given under one law's confidentiality promise can be reused elsewhere, with no purpose limit in the Act."
+     "consequence": "Information given under one law's confidentiality promise can be reused elsewhere, with no purpose limit in the Act.",
+     "short": "Trade information given in confidence can move between departments despite tax and customs secrecy"
     }
    ],
    "unclear": [
     {
      "text": "the limits on how clearance information may be used and disclosed are left to regulations not yet written",
-     "cite": "s. 54.4(g)"
+     "cite": "s. 54.4(g)",
+     "short": "Limits on using and disclosing clearance information are left to regulations not yet written"
     }
    ],
    "credit": "The bill does draw some lines: the trade-data sharing reaches only officials already legally allowed to collect that information (s. 26(1)), and it does not invoke the notwithstanding clause. The clearance provisions above are not touched by either.",
@@ -146,28 +159,33 @@ window.SITE_DATA = {
     {
      "text": "It lets Cabinet make regulations authorizing the Minister, \"for the purposes of national defence or national security or if faced with an emergency, to require that any person do anything, under the control and direction of the Minister\" that the Minister may do under the stockpiling power: acquire, store, maintain, transport or dispose of whatever Cabinet designates",
      "cite": "s. 33(1)(b), s. 15",
-     "consequence": "The old Act let the government authorize or contract with people to act for it. This one lets it compel them, with no declared emergency, no end date, no compensation and no vote in Parliament, the safeguards the Emergencies Act requires for comparable powers."
+     "consequence": "The old Act let the government authorize or contract with people to act for it. This one lets it compel them, with no declared emergency, no end date, no compensation and no vote in Parliament, the safeguards the Emergencies Act requires for comparable powers.",
+     "short": "By regulation, the Minister can be authorized to order any person to act, for defence, security or an emergency"
     },
     {
      "text": "It backs those regulations with administrative penalties of up to $2,000,000 per violation, where the only review the Act guarantees is a request for review by the Minister, or alternatively with a summary offence carrying up to 12 months in jail",
      "cite": "ss. 33.1(2)–(3), 45(2)",
-     "consequence": "The official who directs the compelled act is the only reviewer the statute promises for the penalty that enforces it."
+     "consequence": "The official who directs the compelled act is the only reviewer the statute promises for the penalty that enforces it.",
+     "short": "Penalties of up to $2 million are reviewed only by the Minister; the offence route carries up to a year in jail"
     },
     {
      "text": "It widens what can be stockpiled from \"materials or substances\" held against shortages to \"anything\", including data, essential for national defence, \"national security, including economic security\", or the defence or security of an associated government or other state",
      "cite": "ss. 2, 15(2)",
-     "consequence": "Economic security is an open-ended ground, so the reach of the order power grows with how broadly the government reads it."
+     "consequence": "Economic security is an open-ended ground, so the reach of the order power grows with how broadly the government reads it.",
+     "short": "What can be stockpiled widens to \"anything\", including data, for \"economic security\""
     },
     {
      "text": "It lets the Minister exclude any person from a government procurement on reasonable grounds to believe they pose a risk to national defence, national security or public safety, and states that the Minister is not required to give the reasons",
      "cite": "s. 29(1)–(2)",
-     "consequence": "A decision that never has to be explained is very hard to challenge, even where judicial review remains available in principle."
+     "consequence": "A decision that never has to be explained is very hard to challenge, even where judicial review remains available in principle.",
+     "short": "The Minister can bar anyone from a government procurement without giving reasons"
     }
    ],
    "unclear": [
     {
      "text": "what counts as an \"emergency\", which persons can be compelled and what they can be required to do are left to regulations not yet written, as is whether any independent appeal from a penalty will exist",
-     "cite": "ss. 33(1)(b), 33.1(1)(a)"
+     "cite": "ss. 33(1)(b), 33.1(1)(a)",
+     "short": "What counts as an \"emergency\", who can be compelled and whether a penalty can be appealed are left to regulation"
     }
    ],
    "asks": [
@@ -202,22 +220,26 @@ window.SITE_DATA = {
     {
      "text": "Within 24 months of seizing or restraining private property under a sanctions order, the Minister must apply for its forfeiture, unless legal proceedings are ongoing",
      "cite": "Magnitsky Act s. 4.5(1), (3); SEMA s. 5.7(1), (3) (cls. 5, 12)",
-     "consequence": "Seeking forfeiture was a choice; now it is required."
+     "consequence": "Seeking forfeiture was a choice; now it is required.",
+     "short": "Frozen private property must go to a forfeiture application within 24 months, with no conviction required"
     },
     {
      "text": "Forfeited private property must be disposed of within 30 days, the same period a third party has to claim an interest in it",
-     "cite": "ss. 4.5(2), 5.7(2); ss. 4.2(4), 5.4(4)"
+     "cite": "ss. 4.5(2), 5.7(2); ss. 4.2(4), 5.4(4)",
+     "short": "Forfeited property must be disposed of within 30 days, the same window third parties have to claim it"
     },
     {
      "text": "Cabinet can now freeze on its opinion that international peace, security or stability \"has been undermined or is likely to be undermined\", replacing the economic-sanctions law's \"grave breach\" test",
      "cite": "SEMA s. 4(1.1)(b) (cl. 11(1.1)); Magnitsky Act s. 4(2)(f) (cl. 4(2))",
-     "consequence": "\"Stability\" is undefined, so Cabinet's reading sets where the forfeiture track starts."
+     "consequence": "\"Stability\" is undefined, so Cabinet's reading sets where the forfeiture track starts.",
+     "short": "Cabinet can freeze property on its opinion that international stability is \"likely to be undermined\""
     }
    ],
    "unclear": [
     {
      "text": "\"private property\" and \"legal proceedings\" are not defined, so the reach of the deadline and its exception is left open",
-     "cite": "Magnitsky Act s. 4.5; SEMA s. 5.7"
+     "cite": "Magnitsky Act s. 4.5; SEMA s. 5.7",
+     "short": "\"Private property\" and \"legal proceedings\" are undefined, leaving the deadline's reach open"
     }
    ],
    "asks": [
@@ -250,22 +272,26 @@ window.SITE_DATA = {
     {
      "text": "It lets Cabinet make regulations for disclosing any information collected under the Marine Transportation Security Act to federal, provincial or municipal departments and agencies, and the Act itself sets no purpose, category or threat limit on that sharing",
      "cite": "MTSA s. 5.1 (bill cl. 151)",
-     "consequence": "Information gathered about crew, port workers and travellers for security can be put to other uses, and the real limits are set by Cabinet rather than written by Parliament."
+     "consequence": "Information gathered about crew, port workers and travellers for security can be put to other uses, and the real limits are set by Cabinet rather than written by Parliament.",
+     "short": "Cabinet can let any level of government receive marine-security information, with no limits in the Act"
     },
     {
      "text": "Parliament enacted this same power in 2012 with three limits: federal recipients only, only to protect the safety or security of Canada or Canadians, and only about vessels believed to pose a threat. That version never came into force, and S-7 repeals it and drops all three limits",
      "cite": "S.C. 2012, c. 17, s. 71; bill cl. 188(5)–(7)",
-     "consequence": "The safeguards Parliament once wrote into this power are removed rather than brought into force."
+     "consequence": "The safeguards Parliament once wrote into this power are removed rather than brought into force.",
+     "short": "It repeals the 2012 version of this power and drops all three of its limits"
     },
     {
      "text": "It lets the Public Safety Minister exempt any person or class of persons from provisions of border law, including the Immigration and Refugee Protection Act and the Customs Act, for up to five years, by an order that is not a statutory instrument and has no publication requirement",
      "cite": "CBSA Act s. 6.1",
-     "consequence": "Parts of Acts of Parliament can be switched off for chosen groups by orders the public has no statutory right to see."
+     "consequence": "Parts of Acts of Parliament can be switched off for chosen groups by orders the public has no statutory right to see.",
+     "short": "The Minister can exempt chosen people from border laws for up to five years, by unpublished order"
     },
     {
      "text": "It lets one minister make marine-security rules with the force of regulation for up to two years without Cabinet, and issue 72-hour orders requiring any person to do or not do anything, with breaches punishable by up to five years in prison, outside the Statutory Instruments Act",
      "cite": "MTSA ss. 6.1, 6.2, 17.4, 17.5",
-     "consequence": "Criminal-law-backed rules can be made without the Justice Department examination and parliamentary scrutiny that ordinary regulations receive."
+     "consequence": "Criminal-law-backed rules can be made without the Justice Department examination and parliamentary scrutiny that ordinary regulations receive.",
+     "short": "One minister can make marine-security rules, and 72-hour orders backed by prison, outside normal scrutiny"
     }
    ],
    "unclear": [],
@@ -294,27 +320,32 @@ window.SITE_DATA = {
     {
      "text": "It lets the Minister and Cabinet order any telecom provider to \"do anything or refrain from doing anything\" for security",
      "cite": "s. 15.2(2)(m)",
-     "consequence": "That is not a scoped power. It is a blank order-making authority over the networks everyone depends on."
+     "consequence": "That is not a scoped power. It is a blank order-making authority over the networks everyone depends on.",
+     "short": "The government can order any telecom provider to \"do anything or refrain from doing anything\""
     },
     {
      "text": "Orders — and even the fact that they exist — can be kept secret indefinitely",
      "cite": "ss. 15.1(3), 15.1(6)",
-     "consequence": "A power the public can never see used is a power the public can never contest."
+     "consequence": "A power the public can never see used is a power the public can never contest.",
+     "short": "Orders, and the fact they exist, can stay secret indefinitely"
     },
     {
      "text": "A provider that challenges an order can lose to evidence it is never shown",
      "cite": "s. 15.9",
-     "consequence": "The judicial review it offers is closed-evidence review — a hearing you can lose without ever hearing why."
+     "consequence": "The judicial review it offers is closed-evidence review — a hearing you can lose without ever hearing why.",
+     "short": "A provider that challenges an order can lose on evidence it is never shown"
     },
     {
      "text": "Operator information can flow to the intelligence agencies, CSE and CSIS, and inspectors can enter a provider's premises and copy its systems without a warrant",
-     "cite": "ss. 23, 32"
+     "cite": "ss. 23, 32",
+     "short": "Operator information can flow to CSE and CSIS, and inspectors can copy systems without a warrant"
     }
    ],
    "unclear": [
     {
      "text": "which systems count as \"vital\" (the trigger for secret cyber-security directions) is declared by Cabinet, after the fact, by regulation",
-     "cite": "ss. 6, 20"
+     "cite": "ss. 6, 20",
+     "short": "Which systems count as \"vital\" is declared later by Cabinet regulation"
     }
    ],
    "credit": "The law does contain real red lines — it cannot compel providers to break encryption or intercept communications (ss. 15.2(2.1), 15.2(4)). Those limits are worth stating plainly. They do not reach the secrecy architecture above.",
@@ -341,25 +372,23 @@ window.SITE_DATA = {
     {
      "text": "The age-verification method — government-ID upload, a biometric face scan, a credit card, or a privacy-preserving check — is left entirely undefined",
      "cite": "ss. 22–23",
-     "consequence": "Parliament is being asked to mandate verification without knowing what it will mean in practice: no statutory floor, no required independent vetting of whatever technology gets approved."
+     "consequence": "Parliament is being asked to mandate verification without knowing what it will mean in practice: no statutory floor, no required independent vetting of whatever technology gets approved.",
+     "short": "The age-verification method, from ID upload to a face scan, is left undefined"
     },
     {
      "text": "24-hour takedown deadlines are paired with fines of up to 6% of global revenue",
      "cite": "ss. 43–44, 61, 88",
-     "consequence": "Platforms fined into caution delete first and ask later. Lawful speech is the predictable collateral."
+     "consequence": "Platforms fined into caution delete first and ask later. Lawful speech is the predictable collateral.",
+     "short": "24-hour takedown deadlines come with fines of up to 6% of global revenue"
     },
     {
      "text": "The decisions that matter most — the verification method, the minimum age, which services are covered — move out of Parliament and into Cabinet regulation and an unelected commission",
      "cite": "ss. 23, 27",
-     "consequence": "Parliament votes on the frame; the substance is filled in later, where the public has less say."
+     "consequence": "Parliament votes on the frame; the substance is filled in later, where the public has less say.",
+     "short": "The verification method, minimum age and covered services move to Cabinet and a commission"
     }
    ],
-   "unclear": [
-    {
-     "text": "the verification method and which services face the under-16 rule are set by regulation, after the vote",
-     "cite": "ss. 23, 27"
-    }
-   ],
+   "unclear": [],
    "credit": "Faster removal of child-abuse and intimate-image material is a genuine good, and the bill requires that age-check data be destroyed after use (s. 22(2)). But that limits retention, not method — the blank above is still blank.",
    "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-34",
    "graphics": [
@@ -384,28 +413,32 @@ window.SITE_DATA = {
     {
      "text": "The government's warrantless access to personal data held by companies — and the secrecy rule that can stop a person from learning it happened — are carried forward verbatim from PIPEDA",
      "cite": "§§ 42–47, 70",
-     "consequence": "Parliament had the chance to close a gap the Supreme Court flagged in R v Spencer (2014). This bill chooses to preserve it."
+     "consequence": "Parliament had the chance to close a gap the Supreme Court flagged in R v Spencer (2014). This bill chooses to preserve it.",
+     "short": "Warrantless government access to company-held data, and its secrecy rule, carry over unchanged"
     },
     {
      "text": "Privacy enforcement moves off the independent Office of the Privacy Commissioner and onto a new Digital Safety and Data Protection Commission",
      "cite": "§§ 76–88",
-     "consequence": "Oversight moves from a proven independent officer to an untested body critics warn will be overloaded and weaker."
+     "consequence": "Oversight moves from a proven independent officer to an untested body critics warn will be overloaded and weaker.",
+     "short": "Privacy enforcement moves from the Privacy Commissioner to a new commission"
     },
     {
      "text": "The penalty amounts and core enforcement standards are not written in the bill — they are left to Cabinet",
      "cite": "§ 114",
-     "consequence": "The teeth arrive later, by regulation, outside a parliamentary vote."
+     "consequence": "The teeth arrive later, by regulation, outside a parliamentary vote.",
+     "short": "Penalty amounts and core enforcement standards are left to Cabinet"
     }
    ],
-   "unclear": [
-    {
-     "text": "the penalty amounts and core enforcement standards are set by Cabinet regulation rather than written into the statute",
-     "cite": "§ 114"
-    }
-   ],
+   "unclear": [],
    "credit": "The new consumer rights are real additions — consent as the default, deletion, data mobility, and explanations of automated decisions (§§ 15, 54, 72, 62). None of them touches the loophole above.",
    "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-36",
    "law_date": null,
+   "ask_ways": [
+    "explain",
+    "fix",
+    "statement",
+    "plan"
+   ],
    "graphics": [
     "graphics/C-36/C36-1-the-story.png",
     "graphics/C-36/C36-2-what-it-does.png",
@@ -428,23 +461,27 @@ window.SITE_DATA = {
     {
      "text": "Any website operator who knowingly ignores a written removal request from the maker or a person depicted commits an offence, with no deadline, requester check or dispute route",
      "cite": "s. 172.12(3)",
-     "consequence": "Prison for keeping content, nothing for removing it: operators have every reason to over-remove."
+     "consequence": "Prison for keeping content, nothing for removing it: operators have every reason to over-remove.",
+     "short": "Ignoring a written takedown request is a crime, with no deadline, requester check or dispute route"
     },
     {
      "text": "A maker claiming they believed a performer was 18 must prove they checked and documented government photo ID or a prescribed document",
      "cite": "s. 172.12(7)",
-     "consequence": "That is a burden of proof on the accused, in a 10-year offence."
+     "consequence": "That is a burden of proof on the accused, in a 10-year offence.",
+     "short": "A maker who believed a performer was 18 must prove they checked ID"
     },
     {
      "text": "Commercial sites must remove content posted before the law if they \"reasonably ought to know\" age and consent confirmation was never obtained, absent a reasonable excuse",
      "cite": "s. 172.12(4)",
-     "consequence": "An operator can face 10 years without actually knowing."
+     "consequence": "An operator can face 10 years without actually knowing.",
+     "short": "Sites must remove older content they \"reasonably ought to know\" was never age- and consent-checked"
     }
    ],
    "unclear": [
     {
      "text": "the accepted ID documents, the records platforms must keep and for how long, and the takedown request process are all left to regulations",
-     "cite": "s. 172.14"
+     "cite": "s. 172.14",
+     "short": "The accepted ID, record-keeping and the takedown process are all left to regulations"
     }
    ],
    "asks": [
@@ -455,6 +492,7 @@ window.SITE_DATA = {
    ],
    "credit": "Seizure and deletion stay with a judge, reach abroad covers only acts against minors, and a public-good defence applies (ss. 164.1, 7(4.1), 172.12(10)), yet the provisions above remain.",
    "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/s-252",
+   "common_ground": "I support its aim: everyone in commercial pornography should be an adult who consented.",
    "graphics": [
     "graphics/S-252/S252-1-the-story.png",
     "graphics/S-252/S252-2-what-it-does.png",
@@ -478,17 +516,20 @@ window.SITE_DATA = {
     {
      "text": "It removes the requirement that the Attorney General personally approve a hate-propaganda prosecution",
      "cite": "AG-consent repeal",
-     "consequence": "The decision to launch a speech prosecution now rests with front-line prosecutors alone."
+     "consequence": "The decision to launch a speech prosecution now rests with front-line prosecutors alone.",
+     "short": "Hate-propaganda prosecutions no longer need the Attorney General's personal approval"
     },
     {
      "text": "Where the new speech lines actually fall — on genuine hate promotion, or also on heated but lawful expression and protest — will be decided case by case",
      "cite": "ss. 319(2.2), 320.1001",
-     "consequence": "The words of the law are fixed; its real reach will be set in courtrooms, after the fact."
+     "consequence": "The words of the law are fixed; its real reach will be set in courtrooms, after the fact.",
+     "short": "Whether the new offences reach heated but lawful speech and protest will be decided case by case"
     },
     {
      "text": "The new intimidation offence has been added to the wiretap-eligible and DNA-collection lists",
      "cite": "ss. 2, 8 (s. 183, s. 487.04 lists)",
-     "consequence": "Court-authorized and narrow — but a real widening of what those regimes can touch."
+     "consequence": "Court-authorized and narrow — but a real widening of what those regimes can touch.",
+     "short": "The new intimidation offence is added to the wiretap and DNA-collection lists"
     }
    ],
    "unclear": [],
@@ -517,27 +558,32 @@ window.SITE_DATA = {
     {
      "text": "It reverses the bail burden for seven-plus offence categories, narrows the release-at-earliest-opportunity principle, and counts outstanding charges from separate events toward detention",
      "cite": "ss. 515(6), 493.1, 493.11, 515(10)(v)",
-     "consequence": "Each change is defensible alone. Stacked, they shift the system toward detaining people who have not been convicted of anything."
+     "consequence": "Each change is defensible alone. Stacked, they shift the system toward detaining people who have not been convicted of anything.",
+     "short": "Reverses the bail burden for seven-plus offence categories and narrows the release-first principle"
     },
     {
      "text": "Police — not a court — now make the first decision to publicly identify a young person, with judicial review only if publication runs past 24 hours",
      "cite": "YCJA s. 110(4.1)",
-     "consequence": "A choice that used to require a judge now happens first and gets reviewed later."
+     "consequence": "A choice that used to require a judge now happens first and gets reviewed later.",
+     "short": "Police, not a court, now make the first call to publicly name a young person"
     },
     {
      "text": "Police may keep investigation records on young people even where no charge was ever laid",
-     "cite": "YCJA s. 115(1.2)"
+     "cite": "YCJA s. 115(1.2)",
+     "short": "Police may keep investigation records on young people who were never charged"
     },
     {
      "text": "The act's own accountability mechanism is an annual report that must track detention rates, recidivism, and demographic disparities",
      "cite": "s. 58.3",
-     "consequence": "That report is the public scoreboard. It must be published, scrutinized, and answered — not filed."
+     "consequence": "That report is the public scoreboard. It must be published, scrutinized, and answered — not filed.",
+     "short": "Its accountability rests on an annual report tracking detention rates, recidivism and disparities"
     }
    ],
    "unclear": [
     {
      "text": "the coming-into-force of the youth-record provisions is left to Cabinet, with no date set",
-     "cite": "coming-into-force order"
+     "cite": "coming-into-force order",
+     "short": "When the youth-record provisions take effect is left to Cabinet, with no date set"
     }
    ],
    "credit": "The reverse onus shifts the burden, not the outcome — judges can still order release, and no new mandatory minimum sentences were created. Whether that balance holds is exactly what the annual report will show.",
@@ -565,17 +611,20 @@ window.SITE_DATA = {
     {
      "text": "The new coercive-control offence criminalizes a \"pattern\" of conduct and includes a catch-all for \"any other conduct\" judged on an objective standard",
      "cite": "s. 264.01",
-     "consequence": "A crime whose outer edge is \"any other conduct\" is hard for anyone to predict — including the people it is meant to protect."
+     "consequence": "A crime whose outer edge is \"any other conduct\" is hard for anyone to predict — including the people it is meant to protect.",
+     "short": "The coercive-control offence covers a \"pattern\" of conduct, including \"any other conduct\""
     },
     {
      "text": "Criminal harassment no longer requires that the victim actually feared for their safety — an objective \"could reasonably be expected\" test now suffices",
      "cite": "s. 264",
-     "consequence": "Widening the offence while dropping the requirement of actual fear brushes against lawful expression."
+     "consequence": "Widening the offence while dropping the requirement of actual fear brushes against lawful expression.",
+     "short": "Criminal harassment no longer requires that the victim actually feared for their safety"
     },
     {
      "text": "The deepfake extension of the intimate-image offence leaves its expression edges — satire, parody — under-analyzed",
      "cite": "s. 162.1",
-     "consequence": "The boundary of a serious criminal offence should not be a question mark."
+     "consequence": "The boundary of a serious criminal offence should not be a question mark.",
+     "short": "The deepfake intimate-image offence leaves its satire and parody edges unclear"
     }
    ],
    "unclear": [],
@@ -604,24 +653,22 @@ window.SITE_DATA = {
     {
      "text": "Which goods get listed, and what information importers must hand over, are both set by regulation",
      "cite": "ss. 6, 8",
-     "consequence": "The machinery is in the statute; the substance is not."
+     "consequence": "The machinery is in the statute; the substance is not.",
+     "short": "Which goods are listed, and what importers must hand over, are set by regulation"
     },
     {
      "text": "Affected importers lose the usual Customs Act appeal route and must go to Federal Court instead",
-     "cite": "s. 5(5)"
+     "cite": "s. 5(5)",
+     "short": "Affected importers lose the Customs Act appeal route and must go to Federal Court"
     },
     {
      "text": "The rule this law replaces failed in its use, not its words",
      "cite": "s. 19",
-     "consequence": "The regulations and the resourcing — not the statute — will decide whether this one is different."
+     "consequence": "The regulations and the resourcing — not the statute — will decide whether this one is different.",
+     "short": "The ban this law replaces failed in its use, not its words"
     }
    ],
-   "unclear": [
-    {
-     "text": "which goods appear on the suspect list, and what information importers must provide, are set by regulation after passage",
-     "cite": "ss. 6, 8"
-    }
-   ],
+   "unclear": [],
    "credit": null,
    "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-35",
    "graphics": [
@@ -645,22 +692,26 @@ window.SITE_DATA = {
     {
      "text": "The Minister can grant exemptions from the Act — up to six months for harmonization or error, up to six years for \"innovation sandboxes\" — by orders excluded from the Statutory Instruments Act",
      "cite": "ss. 25.1–25.4",
-     "consequence": "No tabling in Parliament, no scrutiny-committee review, no disallowance. Exemptions from the law, granted where Parliament cannot see them."
+     "consequence": "No tabling in Parliament, no scrutiny-committee review, no disallowance. Exemptions from the law, granted where Parliament cannot see them.",
+     "short": "The Minister can grant exemptions from the Act, for up to six years, outside normal regulatory scrutiny"
     },
     {
      "text": "The \"exceptional circumstance\" ground for an exemption is open-ended",
      "cite": "s. 25.1(d)",
-     "consequence": "And short exemption windows make judicial review practically inaccessible as a remedy."
+     "consequence": "And short exemption windows make judicial review practically inaccessible as a remedy.",
+     "short": "The \"exceptional circumstance\" ground for an exemption is open-ended"
     },
     {
      "text": "A new authority over smart-device data reporting exists in the text, with its actual scope set later by Order in Council",
-     "cite": "s. 22(1)(g)"
+     "cite": "s. 22(1)(g)",
+     "short": "A new power over smart-device data reporting has its scope set later by Cabinet"
     }
    ],
    "unclear": [
     {
      "text": "which products and systems — including energy-management software — fall under the expanded definitions is prescribed later by Order in Council",
-     "cite": "s. 2, s. 22(1)(g)"
+     "cite": "s. 2, s. 22(1)(g)",
+     "short": "Which products, including energy-management software, are covered is set later by Cabinet"
     }
    ],
    "credit": "Harmonizing with US efficiency standards and closing the commercial-importer loophole are defensible aims, and exemption orders must at least be published on the department's website. Publication is not scrutiny.",
@@ -680,22 +731,26 @@ window.SITE_DATA = {
     {
      "text": "Cabinet can amend the Act's own definitions by regulation",
      "cite": "s. 8(a)",
-     "consequence": "The law's scope can quietly widen without a fresh parliamentary vote."
+     "consequence": "The law's scope can quietly widen without a fresh parliamentary vote.",
+     "short": "Cabinet can amend the Act's own definitions by regulation"
     },
     {
      "text": "The interoperability standards can be incorporated \"dynamically\"",
      "cite": "s. 9",
-     "consequence": "Standards can shift over time with no vote at all."
+     "consequence": "Standards can shift over time with no vote at all.",
+     "short": "Interoperability standards can be incorporated \"dynamically\", changing with no vote"
     },
     {
      "text": "Which provinces and territories the Act applies in is decided by Cabinet designation",
-     "cite": "s. 7"
+     "cite": "s. 7",
+     "short": "Cabinet decides which provinces and territories the Act applies in"
     }
    ],
    "unclear": [
     {
      "text": "the interoperability standards and the operative meaning of \"data blocking\" are not written in the bill — both are set by regulation after passage",
-     "cite": "ss. 8, 9"
+     "cite": "ss. 8, 9",
+     "short": "The interoperability standards and what counts as \"data blocking\" are set by regulation"
     }
    ],
    "credit": "In fairness, the duties bind software vendors only, yield wherever health-privacy law forbids access (s. 5(2)(a)), and open no government route into anyone's records. The question is who writes the real rules — and the answer, today, is Cabinet.",
@@ -721,17 +776,20 @@ window.SITE_DATA = {
     {
      "text": "The Commissioner of Canada Elections can now compel testimony and documents in an investigation",
      "cite": "ss. 510.002, 510.01",
-     "consequence": "Production orders still go through a judge; the compelling itself does not."
+     "consequence": "Production orders still go through a judge; the compelling itself does not.",
+     "short": "The Commissioner of Canada Elections can now compel testimony and documents"
     },
     {
      "text": "How far that power reaches, what internal oversight applies to it, and how its use will be reported are all unanswered",
      "cite": "s. 510.002",
-     "consequence": "How often it is used, and under what controls, should be public information — not something learned after the fact."
+     "consequence": "How often it is used, and under what controls, should be public information — not something learned after the fact.",
+     "short": "How far that power reaches, its oversight and how its use is reported are all unanswered"
     },
     {
      "text": "The Commissioner can also share investigation information with foreign bodies under confidentiality agreements",
      "cite": "s. 510.1",
-     "consequence": "The terms and limits of that sharing deserve explanation."
+     "consequence": "The terms and limits of that sharing deserve explanation.",
+     "short": "The Commissioner can share investigation information with foreign bodies"
     }
    ],
    "unclear": [],
@@ -759,16 +817,19 @@ window.SITE_DATA = {
     {
      "text": "What committee struck should stay struck: a bar on police releasing repeat arrestees, a power to jail an accused up to seven days for a risk assessment, and year-long seizures with secret notice",
      "cite": "committee amendments",
-     "consequence": "Any attempt to restore these by amendment or regulation should be flagged publicly the moment it appears."
+     "consequence": "Any attempt to restore these by amendment or regulation should be flagged publicly the moment it appears.",
+     "short": "The three intrusions committee removed should not return by amendment or regulation"
     },
     {
      "text": "What remains is narrower: a consolidated intimate-partner-violence offence, a femicide reclassification, a bail factor that is expressly not a reverse onus, and a 180-day seizure period",
-     "cite": "ss. 263.1, 231(3.1), 515(6)(b.1), 490"
+     "cite": "ss. 263.1, 231(3.1), 515(6)(b.1), 490",
+     "short": "What remains: a partner-violence offence, a femicide rule, a bail factor and 180-day seizures"
     },
     {
      "text": "Its femicide provision overlaps with the nearly identical change made by the government's own C-16",
      "cite": "s. 231(3.1)",
-     "consequence": "Two overlapping first-degree-murder provisions are now on the books. Someone should explain how they will be reconciled."
+     "consequence": "Two overlapping first-degree-murder provisions are now on the books. Someone should explain how they will be reconciled.",
+     "short": "Its femicide provision overlaps with the near-identical change made by C-16"
     }
    ],
    "unclear": [],

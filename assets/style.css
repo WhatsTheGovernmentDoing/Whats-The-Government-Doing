@@ -188,6 +188,24 @@ textarea.letter {
 
 .letter-note { font-family: var(--body); font-size: 13px; color: var(--soft); margin-top: 8px; font-style: italic; }
 
+/* the issues checklist above the letter: every box starts ticked */
+.issues { border: 1px solid var(--rule); background: var(--paper-deep); padding: 14px 18px 12px; margin: 0 0 14px; min-width: 0; }
+.issues legend {
+  font-family: var(--mono); font-size: 12px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--acc-dark); padding: 0 6px; margin-left: -6px;
+}
+.issues-hint { font-family: var(--body); font-size: 13px; color: var(--soft); margin: 2px 0 8px; }
+.issues ul { list-style: none; margin: 0; padding: 0; }
+.issues li + li { border-top: 1px dashed var(--rule); }
+.issues label {
+  display: grid; grid-template-columns: 20px minmax(0, 1fr); column-gap: 10px;
+  padding: 9px 0; cursor: pointer; font-family: var(--body); font-size: 14.5px; line-height: 1.45; color: var(--ink);
+}
+.issues input[type="checkbox"] { width: 17px; height: 17px; margin: 2px 0 0; accent-color: var(--acc); cursor: pointer; }
+.issues input[type="checkbox"]:disabled { cursor: not-allowed; }
+.issues .issue-cite { grid-column: 2; font-family: var(--mono); font-size: 11px; letter-spacing: .04em; color: var(--soft); margin-top: 2px; }
+.issues li.off .issue-text { color: var(--soft); text-decoration: line-through; text-decoration-color: var(--rule); }
+
 .side-box { border: 1px solid var(--rule); padding: 20px; background: var(--paper-deep); height: fit-content; }
 .side-box h3 {
   font-family: var(--mono); font-size: 12px; letter-spacing: .18em;

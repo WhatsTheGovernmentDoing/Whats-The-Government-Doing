@@ -20,12 +20,13 @@ A fully static write-your-MP site generated from this project's own pipeline fil
   Selecting a bill builds a cited letter in the register's voice:
   - **ALARM** — direct: provisions named unacceptable, amendment/removal demanded,
     accountability required.
-  - **CONCERN** — firm but not entitled: real tensions put as questions Parliament must
-    answer on the record.
+  - **CONCERN** — firm but not entitled: the sender's concerns raised, with a reply asked
+    for (explain it, fix it, address it in the statement, or say how it will be upheld).
   - **EXPLAIN** — explanation-focused: consequential substance left to regulation must be
     explained before (or as) the rules are set.
-  - **All registers:** anything the bill defers to Cabinet regulation gets a mandatory
-    "explained and addressed" demand paragraph. Stage-aware asks follow
+  - **All registers:** anything the bill defers to Cabinet regulation is an issue in the
+    checklist, and the ask demands it be explained (alarm: its own line; concern: in the
+    reply request; explain: the whole ask). Stage-aware asks follow
     `Graphics/stage-action-cta.md` (House → MP; Senate → a senator from your province;
     law → Gazette regulations + amending bill + accountability).
 - **`graphics.html` — The Record.** Every published carousel, grouped by register, plus
@@ -88,28 +89,43 @@ Captions and (going forward) the graphics' closing CTA point people here — per
 (add more stage keys in `assets/app.js` STAGE_ASK as needed); `register` ∈
 `alarm | concern | explain`; `credit` may be `null`; `unclear` may be `[]`.
 
-**Letter structure (upgraded 2026-07-10, modelled on the revised C-22 sample):**
-- Each `points[]` entry is `{text, cite, consequence?}` and renders as its own paragraph:
-  plain claim → (cite) → consequence line. 3–4 points per bill — selection is persuasion.
+**Letter structure (reworked 2026-10-25: issue checklist + one ask):**
+- **The checklist.** Every `points[]` entry and every `unclear[]` entry is one *issue*. They
+  show as checkboxes above the letter, **all ticked**; the visitor can untick any (never the
+  last one) and the letter rebuilds. So letters differ by what each sender cares about, and
+  stay short. Changing a recipient keeps the ticks; changing the bill resets them.
+- Each issue needs a **`short`** line (≤ ~18 words, no full stop): a faithful compression of
+  its `text`, used both as the checkbox label and as the letter bullet `- {short} ({cite})`.
+  `text` stays as the fact-checked source. Missing `short` falls back to `text`.
+- The letter is: constituent line → optional **`common_ground`** → lead + register intro →
+  one bullet per ticked issue → `credit` → **one ask** → closing. No per-issue asks.
+- **`common_ground`** (optional, one sentence, e.g. S-252 "I support its aim: …") — write it
+  only when the analysis found the bill's aim sound and the problem is its mechanisms. It is
+  a per-bill call, never a default.
+- **The ask, by register:**
+  - **alarm** — unchanged: STAGE_ASK alarm (or OPPOSE_ASK), plus the undefined-rules demand
+    line when any ticked issue is an `unclear` one.
+  - **concern** — "address this concern", not necessarily "change it". The stage line says
+    where/when to raise it; then a reply request built from **`ask_ways`** (default
+    `["explain","fix","plan"]`): explain it more clearly · fix it where it falls short ·
+    `"statement"` address it in the Charter Statement (government bills whose statement can
+    still speak to it; dropped automatically once law) · what you plan to do so the
+    protections at stake are actually upheld.
+  - **explain** — unchanged: the stage ask for answers on what the bill leaves unclear.
 - `credit` is written as a **pivot**: state the verified limits as facts, then turn back to
   the provisions ("The provisions above survived it anyway." / "Publication is not scrutiny.").
   Never a free-floating reassurance.
-- The undefined-rules demand is one tight paragraph (items joined inline, lowercase, no
-  nested em-dashes) ending in "A power whose limits are set later is not a limited power."
-  Skip the `unclear` entry when the deferral is already a main point carrying the demand.
-- `asks` (optional, added 2026-10-07) — a list of plain sentences, each one a concrete
-  amendment, rendered as "Specifically, I am asking you to press for these amendments:"
-  just before the stage-aware ask. Without it a letter lists problems but never says what
-  to change. One ask per point worth fixing; name the fix, not the grievance. Traced to the
-  brief's verified text, never new claims. Omitted = the letter renders as before.
-- **Length (2026-10-07):** letters must be short enough to be read. Drafted content (lead +
-  points + credit + unclear + asks) targets ≤ 250 words; 3 points, one `unclear` at most.
-  Word budgets per field live in the `bills_pipeline` skill, Step 6.5.
+- Skip an `unclear` entry when it would repeat a point (it becomes a duplicate checkbox).
+- **No longer rendered (kept in old files, harmless):** each point's `consequence` and the
+  `asks` amendment list. The one ask at the end carries the request.
+- **Length:** drafted content (lead + shorts + credit) stays well under 250 words. Word
+  budgets live in the `bills_pipeline` skill, Step 6.5.
 - The lead and the register intro merge into ONE opening paragraph ("…the order exists.
   What is wrong with it is structural, not incidental:") — keep action.json `lead` to one
   sentence that doesn't repeat the points; the intro line does the framing.
 - Every letter closes warm — "I would be grateful for a written reply…" — for MPs and
-  senators alike. The force lives in the asks, never the sign-off.
+  senators alike (concern letters fold it into their ask). The force lives in the ask,
+  never the sign-off.
 
 **`stance: "oppose"` — the escalated register (alarm bills only, use sparingly).** For a bill
 whose defect is its *architecture*, not a fixable clause. Changes the subject line ("this bill

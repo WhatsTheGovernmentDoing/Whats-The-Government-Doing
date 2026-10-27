@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-25",
+ "generated": "2026-10-27",
  "bills": [
   {
    "bill": "C-22",
@@ -152,8 +152,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "A minister can be authorized to order any person to act, with the limits set by regulation",
    "topic_ref": "compelled stockpiling orders and defence procurement powers",
-   "status": "house-2nd",
-   "status_label": "At second reading in the House of Commons",
+   "status": "house-committee",
+   "status_label": "At consideration in committee in the House of Commons",
    "lead": "Inside a bill about defence procurement and investment, C-40 turns a 1951 law that let the government ask industry for reports and hire it to act into one under which a minister can be authorized, by regulation, to order any person to act.",
    "points": [
     {
@@ -1732,14 +1732,6 @@ window.SITE_DATA = {
    "affiliation": "PSG",
    "email": "tracy.muggli@sen.parl.gc.ca",
    "url": "https://sencanada.ca/en/senators/muggli-tracy/"
-  },
-  {
-   "name": "Wallin, Pamela",
-   "prov": "SK",
-   "province": "Saskatchewan",
-   "affiliation": "CSG",
-   "email": "pamela.wallin@sen.parl.gc.ca",
-   "url": "https://sencanada.ca/en/senators/wallin-pamela/"
   },
   {
    "name": "Duncan, Pat",

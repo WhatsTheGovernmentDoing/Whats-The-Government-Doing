@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-29",
+ "generated": "2026-10-30",
  "bills": [
   {
    "bill": "C-22",
@@ -365,8 +365,8 @@ window.SITE_DATA = {
    "register": "concern",
    "descriptor": "A federal internet regulator — with the age-check method left blank",
    "topic_ref": "online harms / Digital Safety Commission",
-   "status": "house-2nd",
-   "status_label": "At second reading in the House of Commons",
+   "status": "house-committee",
+   "status_label": "At consideration in committee in the House of Commons",
    "lead": "This bill creates Canada's first federal regulator for the internet — with power to order content taken down, fine platforms up to 6% of global revenue, and require everyone to prove their age for parts of the internet they use now.",
    "points": [
     {

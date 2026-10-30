@@ -449,6 +449,57 @@ window.SITE_DATA = {
    ]
   },
   {
+   "bill": "S-209",
+   "session": "45-1",
+   "register": "concern",
+   "descriptor": "An offence for commercial porn sites reachable by minors, an age-check defence and court-ordered ISP blocking",
+   "topic_ref": "age checks and court-ordered blocking for commercial pornography sites",
+   "status": "house-committee",
+   "status_label": "At consideration in committee in the House of Commons",
+   "lead": "S-209 would make a Cabinet-approved age check the only way for a commercial porn site to rely on a visitor being an adult, backed by court-ordered blocking through Internet providers.",
+   "points": [
+    {
+     "text": "Once a site ignores a notice, the Federal Court must order Internet providers to block minors' access on reasonable grounds to believe, with no discretion and no stated blocking method",
+     "short": "Court must order ISPs to block minors' access on reasonable grounds to believe, with no discretion",
+     "cite": "s. 10(4)"
+    },
+    {
+     "text": "Believing a visitor was 18 is no defence unless the site used a Cabinet-prescribed age check, so adults who want lawful material face that check in practice",
+     "short": "Adults face a Cabinet-approved age check, in practice, to reach lawful material",
+     "cite": "ss. 7(1), 12(1)(b)"
+    },
+    {
+     "text": "Cabinet can set administrative penalties for ignoring an agency's notice, in amounts it chooses, with no maximum and no appeal route in the bill",
+     "short": "Penalties for ignoring a notice have no maximum and no appeal route",
+     "cite": "ss. 9(2)(c), 12(1)(c)"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "what counts as \"commercial purposes\", when a service only \"incidentally\" carries the content, which agency enforces the Act, and which age-check methods are allowed are all left undefined or to Cabinet",
+     "short": "\"Commercial purposes\", the enforcing agency and the allowed age checks are all left undefined or to Cabinet",
+     "cite": "ss. 5, 6, 8, 12(1)(b)"
+    }
+   ],
+   "ask_ways": [
+    "explain",
+    "fix",
+    "plan"
+   ],
+   "credit": "The Senate deleted the power to block adults and other content (former s. 10(5)), and approved age checks must destroy users' data once done (s. 12(2)). The provisions above survived it anyway.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/s-209",
+   "common_ground": "I support its aim: commercial porn sites should not be open to children.",
+   "graphics": [
+    "graphics/S-209/S209-1-the-story.png",
+    "graphics/S-209/S209-2-what-it-does.png",
+    "graphics/S-209/S209-3-open-question.png",
+    "graphics/S-209/S209-4-the-debate.png",
+    "graphics/S-209/S209-5-does-not-do.png",
+    "graphics/S-209/S209-6-what-to-watch.png",
+    "graphics/S-209/S209-7-key-terms.png"
+   ]
+  },
+  {
    "bill": "S-252",
    "session": "45-1",
    "register": "concern",

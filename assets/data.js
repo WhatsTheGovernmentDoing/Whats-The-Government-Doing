@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-27",
+ "generated": "2026-10-29",
  "bills": [
   {
    "bill": "C-22",
@@ -677,6 +677,50 @@ window.SITE_DATA = {
     "graphics/C-35/C35-3-open-question.png",
     "graphics/C-35/C35-4-does-not-do.png",
     "graphics/C-35/C35-5-what-to-watch.png"
+   ]
+  },
+  {
+   "bill": "C-41",
+   "session": "45-1",
+   "register": "explain",
+   "descriptor": "Advance requests for MAID, and a permanent, wider mental-illness exclusion",
+   "topic_ref": "advance requests and the mental-illness exclusion in the MAID rules",
+   "status": "house-2nd",
+   "status_label": "At second reading in the House of Commons",
+   "lead": "C-41 creates advance requests for MAID and changes both who the mental-illness exclusion reaches and how long it lasts.",
+   "points": [
+    {
+     "text": "The mental-illness exclusion, which today applies only to the illness criterion, would apply to all three eligibility criteria, including decline and suffering",
+     "cite": "s. 241.2(2.1)",
+     "short": "The mental-illness exclusion would cover all three eligibility criteria, not just the illness one"
+    },
+    {
+     "text": "The March 17, 2027 date on which the exclusion was set to end is repealed, and the bill sets no review or new date in its place",
+     "cite": "ss. 9, 10",
+     "short": "The 2027 end date for the exclusion is repealed, with no review set in its place"
+    },
+    {
+     "text": "Advance requests can be acted on only in a province that has passed its own regime and repository, and the bill does not say what happens when a person moves provinces",
+     "cite": "s. 241.21(1)(d), (8)(k), (10)",
+     "short": "Advance requests work only where a province has legislated, and moving provinces is not addressed"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "what counts as a \"mental illness\", and when a response is \"involuntary\" rather than refusal, are not defined in the bill",
+     "cite": "s. 241.2(2.1), s. 241.21(7)",
+     "short": "The bill defines neither \"mental illness\" nor when a response is \"involuntary\" rather than refusal"
+    }
+   ],
+   "credit": "Refusal or resistance stops the procedure, doubt forces a 30-day pause, and a second independent practitioner must confirm (s. 241.21(3), (5), (6)); the questions above remain open anyway.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-41",
+   "graphics": [
+    "graphics/C-41/C41-1-the-story.png",
+    "graphics/C-41/C41-2-what-it-does.png",
+    "graphics/C-41/C41-3-open-question.png",
+    "graphics/C-41/C41-4-does-not-do.png",
+    "graphics/C-41/C41-5-what-to-watch.png",
+    "graphics/C-41/C41-6-key-terms.png"
    ]
   },
   {

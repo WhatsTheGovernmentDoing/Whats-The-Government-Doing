@@ -94,6 +94,51 @@ window.SITE_DATA = {
    ]
   },
   {
+   "bill": "C-31",
+   "session": "45-1",
+   "register": "alarm",
+   "descriptor": "A budget bill that lets Cabinet cancel Nunavut mining rights and authorize orders to private persons",
+   "topic_ref": "Nunavut mineral-rights cancellation and compelled defence stockpiling",
+   "status": "house-report",
+   "status_label": "At report stage in the House of Commons",
+   "lead": "C-31 is a budget bill, but two of its divisions let the government cancel mining rights or order private action on its own judgment, and set the remedy itself.",
+   "points": [
+    {
+     "text": "Cabinet can cancel Nunavut mineral claims, leases and licences if it is of the opinion that this is in the national interest, with notice given only after the order",
+     "short": "Cabinet can cancel Nunavut mining rights on its opinion of the national interest, with notice only afterwards",
+     "cite": "Territorial Lands Act s. 12.1(1)–(2)"
+    },
+    {
+     "text": "The minister decides whether any compensation is paid, and the bill bars every other claim for compensation, damages, indemnity or other relief from the Crown",
+     "short": "The minister decides whether any compensation is paid, and every other claim for damages or relief is barred",
+     "cite": "Territorial Lands Act s. 12.1(3), (7)"
+    },
+    {
+     "text": "A regulation can let the minister order any person to do the government's stockpiling work, enforced by penalties up to $2 million or up to 12 months in jail",
+     "short": "A regulation can let a minister order anyone to do stockpiling work, with $2 million penalties or jail",
+     "cite": "Defence Production Act ss. 33(1)(b), 33.1(3), 45(2)"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "what counts as the \"national interest\" or an \"emergency\" is never defined, and who can be ordered to act and the rules on compensation are left to Cabinet regulation",
+     "short": "\"National interest\" and \"emergency\" are undefined; who can be ordered and compensation rules are left to Cabinet",
+     "cite": "TLA s. 12.1(1), (9); DPA s. 33(1)(b)"
+    }
+   ],
+   "credit": "Orders must be published, the compensation decision has a deadline, and ten members can force a debate on the order-power rules, but none of this gives a hearing or an independent appeal.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-31",
+   "graphics": [
+    "graphics/C-31/C31-1-name-vs-reality.png",
+    "graphics/C-31/C31-2-what-it-does.png",
+    "graphics/C-31/C31-3-means-for-you.png",
+    "graphics/C-31/C31-4-the-pattern.png",
+    "graphics/C-31/C31-5-the-balance.png",
+    "graphics/C-31/C31-6-weigh-in.png",
+    "graphics/C-31/C31-7-key-terms.png"
+   ]
+  },
+  {
    "bill": "C-39",
    "session": "45-1",
    "register": "alarm",

@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-10-30",
+ "generated": "2026-11-03",
  "bills": [
   {
    "bill": "C-22",
@@ -304,6 +304,102 @@ window.SITE_DATA = {
     "graphics/S-7/S7-4-the-pattern.png",
     "graphics/S-7/S7-5-the-balance.png",
     "graphics/S-7/S7-6-weigh-in.png"
+   ]
+  },
+  {
+   "bill": "S-8",
+   "session": "45-1",
+   "register": "alarm",
+   "descriptor": "Your bank can collect and use information about you from the RCMP or prescribed agencies, with no notice to you",
+   "topic_ref": "no-notice information sharing with banks, FINTRAC data going to the Finance Minister, and mail seizure",
+   "status": "senate-2nd",
+   "status_label": "At second reading in the Senate",
+   "common_ground": "I support the aim of stopping money laundering, terrorist financing and sanctions evasion.",
+   "lead": "S-8 lets information about people move among government agencies, banks, FINTRAC and the Finance Minister with no judge and no duty to tell the person concerned.",
+   "points": [
+    {
+     "text": "Banks and other listed businesses may collect and use your information from the RCMP or prescribed agencies without your knowledge, need not give you access, and are immune in good faith",
+     "short": "Banks can collect and use your information from the RCMP or prescribed agencies without telling you",
+     "cite": "PCMLTFA ss. 11.71–11.73 (bill cl. 24); PIPEDA s. 9(3)(c.1) (bill cl. 38)"
+    },
+    {
+     "text": "The rule making FINTRAC exclude ordinary people's identifying information from what it gives the Finance Minister on request is repealed; the test is what the Minister or officer considers relevant",
+     "short": "It repeals the rule keeping ordinary people's names out of FINTRAC data given to the Finance Minister",
+     "cite": "PCMLTFA ss. 53.1–53.3 (bill cl. 26)"
+    },
+    {
+     "text": "Directive and regulation powers limited to transactions tied to foreign states or entities lose that limit, and the Minister, not Cabinet, can make regulations banning classes of transactions",
+     "short": "Foreign-only powers to monitor or ban transactions now reach domestic ones, and regulations need no Cabinet step",
+     "cite": "PCMLTFA ss. 11.42, 11.49 (bill cl. 20, 23)"
+    },
+    {
+     "text": "Anything in the mail, letters included, becomes open to seizure under the Criminal Code and two drug Acts; written notice goes to Canada Post, and none is required to you",
+     "short": "Mail, letters included, becomes open to seizure under three Acts, with no notice required to you",
+     "cite": "Canada Post Corporation Act s. 40.1 (bill cl. 52)"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "which agencies can use the bank channel is left to regulations, and 'national security' and 'the integrity of Canada's financial system' are not defined",
+     "short": "Which agencies can use this channel is left to regulations, and 'national security' is undefined",
+     "cite": "PCMLTFA ss. 11.71(1)(a), 11.202"
+    }
+   ],
+   "credit": "It limits how banks may use the information, adds no new warrant type for mail and leaves judicial review open, but the provisions above survived all of that.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/s-8",
+   "graphics": [
+    "graphics/S-8/S8-1-name-vs-reality.png",
+    "graphics/S-8/S8-2-what-it-does.png",
+    "graphics/S-8/S8-3-means-for-you.png",
+    "graphics/S-8/S8-4-the-pattern.png",
+    "graphics/S-8/S8-5-the-balance.png",
+    "graphics/S-8/S8-6-weigh-in.png",
+    "graphics/S-8/S8-7-key-terms.png"
+   ]
+  },
+  {
+   "bill": "S-214",
+   "session": "45-1",
+   "register": "alarm",
+   "descriptor": "Cabinet can permanently forfeit seized property tied to a foreign state by its own order, with no judge",
+   "topic_ref": "Cabinet forfeiture of foreign-state-linked property without a court",
+   "status": "house-2nd",
+   "status_label": "At second reading in the House of Commons",
+   "lead": "S-214 moves the forfeiture of seized property tied to a foreign state from a courtroom to the Cabinet table, and the hearing that came with the court goes with it.",
+   "points": [
+    {
+     "text": "Cabinet may order property under a sanctions seizure order forfeited if a foreign state owns, holds or controls it; the bill requires no judge, evidence test or hearing",
+     "short": "Cabinet can permanently forfeit seized property tied to a foreign state by its own order, with no judge",
+     "cite": "SEMA s. 5.41 (bill cl. 4)"
+    },
+    {
+     "text": "Judges can no longer forfeit property a foreign state owns, holds or controls, so Cabinet's order becomes the only route for that property",
+     "short": "It closes the court route for that property entirely",
+     "cite": "SEMA s. 5.4(1.1) (bill cl. 3)"
+    },
+    {
+     "text": "Co-owners, lenders and others with an interest lose the notice and the 30-day claim to be paid that come with a court forfeiture, and their interests lose their ranking",
+     "short": "Co-owners and lenders lose the notice and the court claim to be paid for their interest",
+     "cite": "SEMA ss. 5.4(2)–(4), 5.2(b) (bill cl. 2)"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "outside the company-control rules in s. 2.1, which include an open-ended 'reasonable to conclude' test, the Act does not define when property is 'held or controlled' by a foreign state, and the bill sets no process Cabinet must follow before deciding it",
+     "short": "When property counts as state-controlled, and what process Cabinet must follow, are left undefined",
+     "cite": "SEMA ss. 2.1, 5.41"
+    }
+   ],
+   "credit": "It applies only to property already seized under sanctions, keeps the court route for other property, and limits the proceeds to rebuilding, peace and victims. None of that gives anyone with a stake a hearing.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/s-214",
+   "graphics": [
+    "graphics/S-214/S214-1-name-vs-reality.png",
+    "graphics/S-214/S214-2-what-it-does.png",
+    "graphics/S-214/S214-3-means-for-you.png",
+    "graphics/S-214/S214-4-the-pattern.png",
+    "graphics/S-214/S214-5-the-balance.png",
+    "graphics/S-214/S214-6-weigh-in.png",
+    "graphics/S-214/S214-7-key-terms.png"
    ]
   },
   {
@@ -964,6 +1060,15 @@ window.SITE_DATA = {
   },
   {
    "section": "Weekly Roundups",
+   "name": "Roundup October 30 26",
+   "images": [
+    "graphics/extras/roundup-October-30-26/roundup-october-30-26-1-cover.png",
+    "graphics/extras/roundup-October-30-26/roundup-october-30-26-2-list.png",
+    "graphics/extras/roundup-October-30-26/roundup-october-30-26-3-closing.png"
+   ]
+  },
+  {
+   "section": "Weekly Roundups",
    "name": "Roundup October 23 26",
    "images": [
     "graphics/extras/roundup-October-23-26/roundup-october-23-26-1-cover.png",
@@ -1002,6 +1107,15 @@ window.SITE_DATA = {
     "graphics/extras/progress-October-9-26/progress-october-9-26-1-cover.png",
     "graphics/extras/progress-October-9-26/progress-october-9-26-2-list.png",
     "graphics/extras/progress-October-9-26/progress-october-9-26-3-closing.png"
+   ]
+  },
+  {
+   "section": "Progress Updates",
+   "name": "Progress October 30 26",
+   "images": [
+    "graphics/extras/progress-October-30-26/progress-october-30-26-1-cover.png",
+    "graphics/extras/progress-October-30-26/progress-october-30-26-2-list.png",
+    "graphics/extras/progress-October-30-26/progress-october-30-26-3-closing.png"
    ]
   },
   {

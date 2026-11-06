@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-11-04",
+ "generated": "2026-11-06",
  "bills": [
   {
    "bill": "C-22",
@@ -590,6 +590,55 @@ window.SITE_DATA = {
    ]
   },
   {
+   "bill": "C-235",
+   "session": "45-1",
+   "register": "concern",
+   "descriptor": "A parole wait of up to 40 years, set by a judge, for abduction, sexual offence and murder of the same victim",
+   "topic_ref": "a parole wait of up to 40 years and what the word \"murder\" covers",
+   "status": "senate-2nd",
+   "status_label": "At second reading in the Senate",
+   "lead": "C-235 would let a judge set the parole wait at up to 40 years, not 25, on convictions for a listed abduction offence, sexual offence and murder of one victim.",
+   "points": [
+    {
+     "text": "A judge could set the wait at up to 40 years, though the Supreme Court held in Bissonnette that life with no realistic possibility of parole is cruel and unusual",
+     "short": "A wait of up to 40 years must fit Bissonnette's rule on a realistic possibility of parole",
+     "cite": "s. 745.31(1)"
+    },
+    {
+     "text": "The trigger says \"murder\" with no degree, so second-degree murder could carry a 25-year floor instead of 10, though the sponsor told committee it doesn't apply",
+     "short": "\"Murder\" names no degree, so second-degree murder could carry a 25-year floor",
+     "cite": "s. 745(a.1), (c)"
+    },
+    {
+     "text": "The listed offences go beyond the summary's \"abduction, sexual assault\", taking in sections 151 to 153.1 and 280 to 283 as well",
+     "short": "The listed offences go beyond what the bill's summary describes",
+     "cite": "s. 745(a.1)"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "whether a judge must weigh a person's age or life expectancy when setting the period, since the listed factors name neither",
+     "short": "The factors a judge weighs name neither age nor life expectancy",
+     "cite": "s. 745.31(1)"
+    }
+   ],
+   "ask_ways": [
+    "explain",
+    "fix"
+   ],
+   "credit": "The extra years are discretionary, the judge must give reasons, the person can appeal, and time in custody counts (ss. 745.31, 675(1.2), 746). The questions above survived it anyway.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-235",
+   "graphics": [
+    "graphics/C-235/C235-1-the-story.png",
+    "graphics/C-235/C235-2-what-it-does.png",
+    "graphics/C-235/C235-3-open-question.png",
+    "graphics/C-235/C235-4-the-debate.png",
+    "graphics/C-235/C235-5-does-not-do.png",
+    "graphics/C-235/C235-6-what-to-watch.png",
+    "graphics/C-235/C235-7-key-terms.png"
+   ]
+  },
+  {
    "bill": "S-209",
    "session": "45-1",
    "register": "concern",
@@ -1124,6 +1173,16 @@ window.SITE_DATA = {
   },
   {
    "section": "Weekly Roundups",
+   "name": "Roundup November 6 26",
+   "images": [
+    "graphics/extras/roundup-November-6-26/roundup-november-6-26-1-cover.png",
+    "graphics/extras/roundup-November-6-26/roundup-november-6-26-2-list.png",
+    "graphics/extras/roundup-November-6-26/roundup-november-6-26-3-list.png",
+    "graphics/extras/roundup-November-6-26/roundup-november-6-26-4-closing.png"
+   ]
+  },
+  {
+   "section": "Weekly Roundups",
    "name": "Roundup June 22 26",
    "images": [
     "graphics/extras/roundup-June-22-26/roundup-june-22-26-1-cover.png",
@@ -1170,6 +1229,15 @@ window.SITE_DATA = {
     "graphics/extras/progress-October-23-26/progress-october-23-26-1-cover.png",
     "graphics/extras/progress-October-23-26/progress-october-23-26-2-list.png",
     "graphics/extras/progress-October-23-26/progress-october-23-26-3-closing.png"
+   ]
+  },
+  {
+   "section": "Progress Updates",
+   "name": "Progress November 6 26",
+   "images": [
+    "graphics/extras/progress-November-6-26/progress-november-6-26-1-cover.png",
+    "graphics/extras/progress-November-6-26/progress-november-6-26-2-list.png",
+    "graphics/extras/progress-November-6-26/progress-november-6-26-3-closing.png"
    ]
   },
   {

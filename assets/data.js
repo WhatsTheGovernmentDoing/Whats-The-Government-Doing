@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-11-11",
+ "generated": "2026-11-17",
  "bills": [
   {
    "bill": "C-22",
@@ -587,6 +587,56 @@ window.SITE_DATA = {
     "graphics/C-36/C36-4-the-debate.png",
     "graphics/C-36/C36-5-does-not-do.png",
     "graphics/C-36/C36-6-what-to-watch.png"
+   ]
+  },
+  {
+   "bill": "C-231",
+   "session": "45-1",
+   "register": "concern",
+   "descriptor": "Treatment programs written into youth diversion, sentencing, probation and conditional supervision",
+   "topic_ref": "court-ordered treatment for young people and whether they must consent",
+   "status": "senate-1st",
+   "status_label": "House of Commons bill awaiting first reading in the Senate",
+   "lead": "C-231 writes drug and other treatment programs into a youth's criminal case, from a police referral to supervision after custody, and passed the House on November 16, 2026.",
+   "common_ground": "I support giving young people a route to treatment instead of prosecution.",
+   "points": [
+    {
+     "text": "A judge could order a youth to attend treatment as a condition of probation or conditional supervision, and the bill does not say whether the youth must consent",
+     "short": "Treatment ordered on probation or supervision has no written consent rule",
+     "cite": "ss. 55(2)(e.1), 105(3)(c.1)"
+    },
+    {
+     "text": "The bill as introduced barred a custody sentence solely for failing or refusing a treatment condition on probation, and the House justice committee deleted that rule with no recorded reason",
+     "short": "The rule against custody solely for refusing treatment on probation was deleted",
+     "cite": "first-reading cl. 3; s. 39"
+    },
+    {
+     "text": "The bill as introduced required treatment programs authorized by the Attorney General or a provincial designate; for probation, delayed sentencing and police referrals, that requirement is gone",
+     "short": "Treatment on probation or a delayed sentence no longer needs an authorized program",
+     "cite": "ss. 6(1.1), 41.1, 55(2)(e.1)"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "what counts as \"any other treatment program\", which neither the bill nor the Youth Criminal Justice Act defines",
+     "short": "\"Any other treatment program\" is not defined",
+     "cite": "ss. 10(3.1), 41.1, 55(2)(e.1), 105(3)(c.1)"
+    }
+   ],
+   "ask_ways": [
+    "explain",
+    "fix"
+   ],
+   "credit": "Police referrals, out-of-court sanctions and delayed sentencing all require the youth's consent, and custody for a probation breach stays limited (ss. 6(1.1), 10(2)(c), 41.1, 39(1)(b)). The questions above survived it anyway.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-231",
+   "graphics": [
+    "graphics/C-231/C231-1-the-story.png",
+    "graphics/C-231/C231-2-what-it-does.png",
+    "graphics/C-231/C231-3-open-question.png",
+    "graphics/C-231/C231-4-the-debate.png",
+    "graphics/C-231/C231-5-does-not-do.png",
+    "graphics/C-231/C231-6-what-to-watch.png",
+    "graphics/C-231/C231-7-key-terms.png"
    ]
   },
   {

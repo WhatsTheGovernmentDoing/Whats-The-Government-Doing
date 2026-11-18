@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-11-17",
+ "generated": "2026-11-18",
  "bills": [
   {
    "bill": "C-22",
@@ -310,8 +310,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "Marine-security information can be shared with any level of government, with no limits in the law",
    "topic_ref": "marine-security information sharing and unpublished border-law exemptions",
-   "status": "senate-2nd",
-   "status_label": "At second reading in the Senate",
+   "status": "senate-committee",
+   "status_label": "At consideration in committee in the Senate",
    "lead": "Inside a bill presented as cutting red tape, S-7 lets Cabinet decide later, by regulation, which federal, provincial and municipal agencies can be given the information Canada's marine security system collects, with no limit in the law on why or what.",
    "points": [
     {
@@ -595,8 +595,8 @@ window.SITE_DATA = {
    "register": "concern",
    "descriptor": "Treatment programs written into youth diversion, sentencing, probation and conditional supervision",
    "topic_ref": "court-ordered treatment for young people and whether they must consent",
-   "status": "senate-1st",
-   "status_label": "House of Commons bill awaiting first reading in the Senate",
+   "status": "senate-2nd",
+   "status_label": "At second reading in the Senate",
    "lead": "C-231 writes drug and other treatment programs into a youth's criminal case, from a police referral to supervision after custody, and passed the House on November 16, 2026.",
    "common_ground": "I support giving young people a route to treatment instead of prosecution.",
    "points": [
@@ -976,8 +976,8 @@ window.SITE_DATA = {
    "register": "explain",
    "descriptor": "Advance requests for MAID, and a permanent, wider mental-illness exclusion",
    "topic_ref": "advance requests and the mental-illness exclusion in the MAID rules",
-   "status": "house-2nd",
-   "status_label": "At second reading in the House of Commons",
+   "status": "house-committee",
+   "status_label": "At consideration in committee in the House of Commons",
    "lead": "C-41 creates advance requests for MAID and changes both who the mental-illness exclusion reaches and how long it lasts.",
    "points": [
     {

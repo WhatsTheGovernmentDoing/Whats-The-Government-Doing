@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-11-18",
+ "generated": "2026-11-25",
  "bills": [
   {
    "bill": "C-22",
@@ -99,8 +99,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "A budget bill that lets Cabinet cancel Nunavut mining rights and authorize orders to private persons",
    "topic_ref": "Nunavut mineral-rights cancellation and compelled defence stockpiling",
-   "status": "house-report",
-   "status_label": "At report stage in the House of Commons",
+   "status": "house-3rd",
+   "status_label": "At third reading in the House of Commons",
    "lead": "C-31 is a budget bill, but two of its divisions let the government cancel mining rights or order private action on its own judgment, and set the remedy itself.",
    "points": [
     {
@@ -258,8 +258,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "Frozen private property must, outside ongoing litigation, go to a forfeiture application within 24 months, with no conviction required",
    "topic_ref": "mandatory forfeiture of sanctioned property and a lower sanctions trigger",
-   "status": "senate-committee",
-   "status_label": "At consideration in committee in the Senate",
+   "status": "awaiting-ra",
+   "status_label": "Awaiting royal assent",
    "lead": "Inside a bill about international sanctions, C-219 makes seeking forfeiture of frozen private property a required step, on a deadline, with no criminal conviction needed.",
    "points": [
     {
@@ -1233,6 +1233,16 @@ window.SITE_DATA = {
   },
   {
    "section": "Weekly Roundups",
+   "name": "Roundup November 20 26",
+   "images": [
+    "graphics/extras/roundup-November-20-26/roundup-november-20-26-1-cover.png",
+    "graphics/extras/roundup-November-20-26/roundup-november-20-26-2-list.png",
+    "graphics/extras/roundup-November-20-26/roundup-november-20-26-3-list.png",
+    "graphics/extras/roundup-November-20-26/roundup-november-20-26-4-closing.png"
+   ]
+  },
+  {
+   "section": "Weekly Roundups",
    "name": "Roundup June 22 26",
    "images": [
     "graphics/extras/roundup-June-22-26/roundup-june-22-26-1-cover.png",
@@ -1288,6 +1298,15 @@ window.SITE_DATA = {
     "graphics/extras/progress-November-6-26/progress-november-6-26-1-cover.png",
     "graphics/extras/progress-November-6-26/progress-november-6-26-2-list.png",
     "graphics/extras/progress-November-6-26/progress-november-6-26-3-closing.png"
+   ]
+  },
+  {
+   "section": "Progress Updates",
+   "name": "Progress November 20 26",
+   "images": [
+    "graphics/extras/progress-November-20-26/progress-november-20-26-1-cover.png",
+    "graphics/extras/progress-November-20-26/progress-november-20-26-2-list.png",
+    "graphics/extras/progress-November-20-26/progress-november-20-26-3-closing.png"
    ]
   },
   {

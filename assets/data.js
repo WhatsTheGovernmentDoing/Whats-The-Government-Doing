@@ -253,6 +253,51 @@ window.SITE_DATA = {
    ]
   },
   {
+   "bill": "C-43",
+   "session": "45-1",
+   "register": "alarm",
+   "descriptor": "A budget bill that sets up a government-wide channel for your personal information",
+   "topic_ref": "government-wide sharing of personal information and SINs",
+   "status": "house-2nd",
+   "status_label": "At second reading in the House of Commons",
+   "lead": "Inside a budget implementation bill, C-43 rewrites where the personal information you give federal programs can travel inside government, and who decides the limits.",
+   "points": [
+    {
+     "text": "Digital Transformation Canada may collect personal information, including SINs, from any department, keep it on their behalf, and disclose it to bodies permitted by law to collect it",
+     "cite": "Digital Transformation Canada Act ss. 21–23",
+     "short": "A new central department can collect your SIN and personal information from other departments and pass it on"
+    },
+    {
+     "text": "Those disclosures may be made despite any Act or regulation listed in Schedule 2, and Cabinet can add any Act or regulation to that schedule by order",
+     "cite": "Digital Transformation Canada Act s. 26",
+     "short": "Cabinet, by order, can decide which laws those transfers override"
+    },
+    {
+     "text": "Service Canada may support any department's enforcement; ESDC program information may flow to any person or body if officials consider it necessary; three routes escape ss. 32–34 and 35–42",
+     "cite": "DESDA ss. 5.1(1)(a.1), 34.11–34.13, 34.2",
+     "short": "Information from your Service Canada programs can feed other departments' enforcement, without the Act's confidentiality rules"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "how passenger reservation data may be used, shared and kept, which further bodies count as partner entities or service partners, and what limits apply to IRCC's disclosures are all left to regulations no one is required to make",
+     "cite": "Customs Act s. 107.1(3); DTCA ss. 2, 27; IRCC Act s. 5.7",
+     "short": "Limits on airline data, new data partners and IRCC sharing are left to optional regulations"
+    }
+   ],
+   "credit": "The hub cannot disclose for law enforcement unless another law permits it (s. 25(2)) or give SINs to private service partners (s. 22(2)), but neither limits the transfers above.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-43",
+   "graphics": [
+    "graphics/C-43/C43-1-name-vs-reality.png",
+    "graphics/C-43/C43-2-what-it-does.png",
+    "graphics/C-43/C43-3-means-for-you.png",
+    "graphics/C-43/C43-4-the-pattern.png",
+    "graphics/C-43/C43-5-the-balance.png",
+    "graphics/C-43/C43-6-weigh-in.png",
+    "graphics/C-43/C43-7-key-terms.png"
+   ]
+  },
+  {
    "bill": "C-219",
    "session": "45-1",
    "register": "alarm",

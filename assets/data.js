@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-11-26",
+ "generated": "2026-11-27",
  "bills": [
   {
    "bill": "C-22",
@@ -7,8 +7,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "A faster police route to your identity online",
    "topic_ref": "lawful access / subscriber information",
-   "status": "senate-committee",
-   "status_label": "At consideration in committee in the Senate",
+   "status": "senate-report",
+   "status_label": "At report stage in the Senate",
    "lead": "This bill gives police a new, faster way to make phone and internet companies reveal who is behind an IP address, phone number, or account.",
    "points": [
     {
@@ -402,8 +402,8 @@ window.SITE_DATA = {
    "register": "alarm",
    "descriptor": "Your bank can collect and use information about you from the RCMP or prescribed agencies, with no notice to you",
    "topic_ref": "no-notice information sharing with banks, FINTRAC data going to the Finance Minister, and mail seizure",
-   "status": "senate-2nd",
-   "status_label": "At second reading in the Senate",
+   "status": "senate-committee",
+   "status_label": "At consideration in committee in the Senate",
    "common_ground": "I support the aim of stopping money laundering, terrorist financing and sanctions evasion.",
    "lead": "S-8 lets information about people move among government agencies, banks, FINTRAC and the Finance Minister with no judge and no duty to tell the person concerned.",
    "points": [

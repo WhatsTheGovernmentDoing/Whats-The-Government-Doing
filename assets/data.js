@@ -546,6 +546,55 @@ window.SITE_DATA = {
    ]
   },
   {
+   "bill": "C-28",
+   "session": "45-1",
+   "register": "concern",
+   "descriptor": "Space launch and re-entry brought under the Aeronautics Act, with zoning near launch sites",
+   "topic_ref": "space launch and re-entry under the Aeronautics Act",
+   "status": "house-committee",
+   "status_label": "At consideration in committee in the House of Commons",
+   "lead": "C-28 brings rocket launches and re-entries under the Aeronautics Act, extending its licensing, emergency-stop and zoning powers to launch vehicles and the sites they use.",
+   "points": [
+    {
+     "text": "Cabinet may bar land near a launch or re-entry site from uses or development the Minister considers incompatible, in a zone the bill does not size, with no compensation",
+     "cite": "s. 5.4(2)(a.1)–(b.2), s. 5.8",
+     "short": "Land near launch sites can be restricted in a zone of no set size, with no compensation"
+    },
+    {
+     "text": "Launch and re-entry permits and site certificates leave the Act's refusal-notice and Tribunal-review rules, and the bill writes no review route in their place",
+     "cite": "s. 3(3)(e)–(h), s. 4.9(e.1), (h.1)",
+     "short": "Launch permits and site certificates lose Tribunal review, with no replacement route in the bill"
+    },
+    {
+     "text": "Cabinet may define \"launch vehicle\" and \"re-entry vehicle\" by regulation, and once it defines both, the bill's own definitions are repealed",
+     "cite": "ss. 3.1, 3.2",
+     "short": "Once Cabinet defines both vehicle terms, the bill's own definitions repeal themselves"
+    }
+   ],
+   "unclear": [
+    {
+     "text": "what counts as a \"launch\" is not defined in the bill and is left to Cabinet regulation",
+     "cite": "s. 3.1",
+     "short": "The bill does not define \"launch\", leaving it to Cabinet regulation"
+    }
+   ],
+   "ask_ways": [
+    "explain",
+    "fix"
+   ],
+   "credit": "Existing uses are grandfathered, a new zoning regulation is published for comment first, and entry needs 30 days' notice (ss. 5.4(4), 5.5, 5.7); the questions above remain open anyway.",
+   "legisinfo": "https://www.parl.ca/legisinfo/en/bill/45-1/c-28",
+   "graphics": [
+    "graphics/C-28/C28-1-the-story.png",
+    "graphics/C-28/C28-2-what-it-does.png",
+    "graphics/C-28/C28-3-open-question.png",
+    "graphics/C-28/C28-4-the-debate.png",
+    "graphics/C-28/C28-5-does-not-do.png",
+    "graphics/C-28/C28-6-what-to-watch.png",
+    "graphics/C-28/C28-7-key-terms.png"
+   ]
+  },
+  {
    "bill": "C-34",
    "session": "45-1",
    "register": "concern",
@@ -1278,6 +1327,15 @@ window.SITE_DATA = {
   },
   {
    "section": "Weekly Roundups",
+   "name": "Roundup November 27 26",
+   "images": [
+    "graphics/extras/roundup-November-27-26/roundup-november-27-26-1-cover.png",
+    "graphics/extras/roundup-November-27-26/roundup-november-27-26-2-list.png",
+    "graphics/extras/roundup-November-27-26/roundup-november-27-26-3-closing.png"
+   ]
+  },
+  {
+   "section": "Weekly Roundups",
    "name": "Roundup November 20 26",
    "images": [
     "graphics/extras/roundup-November-20-26/roundup-november-20-26-1-cover.png",
@@ -1343,6 +1401,17 @@ window.SITE_DATA = {
     "graphics/extras/progress-November-6-26/progress-november-6-26-1-cover.png",
     "graphics/extras/progress-November-6-26/progress-november-6-26-2-list.png",
     "graphics/extras/progress-November-6-26/progress-november-6-26-3-closing.png"
+   ]
+  },
+  {
+   "section": "Progress Updates",
+   "name": "Progress November 27 26",
+   "images": [
+    "graphics/extras/progress-November-27-26/progress-november-27-26-1-cover.png",
+    "graphics/extras/progress-November-27-26/progress-november-27-26-2-list.png",
+    "graphics/extras/progress-November-27-26/progress-november-27-26-3-list.png",
+    "graphics/extras/progress-November-27-26/progress-november-27-26-4-list.png",
+    "graphics/extras/progress-November-27-26/progress-november-27-26-5-closing.png"
    ]
   },
   {
